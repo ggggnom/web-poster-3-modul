@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Gotham';
+  font-weight: bold;
+  src: url(../fonts/Gotham-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gotham';
+  font-weight: bolder;
+  src: url(../fonts/Gotham-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'bodoni';
+  font-weight: lighter;
+  src: url(../fonts/bodoni.ttf) format('truetype');
+}
