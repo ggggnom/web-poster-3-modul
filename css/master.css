@@ -7,6 +7,7 @@ body {
   font-family: 'Gotham', 'bodoni', sans-serif;
   overflow-x: hidden;
   background-color: black;
+  transition: background-color 4s ease;
 }
 .background {
   position: fixed;
@@ -22,14 +23,14 @@ body {
   width: 22vw;
   position: absolute;
   left: 30vw;
-  top: 48vh;
+  top: 21vw;
   transform: rotate(5deg);
 }
 .rectangle_smile_smile {
   width: 9vw;
   position: absolute;
   left: 35.7vw;
-  top: 60vh;
+  top: 29vw;
   transform: rotate(5deg);
 }
 .about_memorise {
@@ -37,7 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 58vw;
-  height: 6vh;
+  height: 3vw;
   background-color: #FFD524;
   transform: rotate(54deg);
   position: absolute;
@@ -53,33 +54,35 @@ body {
   width: 18vw;
   position: absolute;
   left: 10vw;
-  top: 20vh;
+  top: 12vw;
   z-index: -2;
 }
 
 .coloring {
   position: absolute;
   left: 47vw;
-  top: 15vh;
+  top: 9vw;
+  display: flex;
 }
 .coloring_after {
   position: absolute;
   left: 47vw;
-  top: 15vh;
+  top: 9vw;
   display: none;
 }
 .no {
   width: 19vw;
   position: absolute;
   left: 10vw;
-  top: 20vh;
+  top: 12vw;
   z-index: -3;
+  display: none;
 }
 .yellow_smile {
   width: 8vw;
   position: fixed;
   left: 87vw;
-  top: 56vh;
+  top: 34vw;
 }
 
 .moving_phrase {
@@ -89,13 +92,13 @@ body {
 .moving_phrase_rectangle {
   background-color: #F33829;
   width: 45vw;
-  height: 20vh;
+  height: 13vw;
   position: absolute;
   left: 22vw;
   top: 40vw;
   z-index: -1;
   transform: rotate(6deg);
-  border: 1vh solid black;
+  border: 0.8vw solid black;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -104,10 +107,10 @@ body {
   color: transparent;
   font-size: 9vw;
   font-weight: bold;
-  -webkit-text-stroke: 0.5vh #FBCBE1;
-  width: 110vw;
-  margin-left: 2vw;
-  margin-top: 2vh;
+  -webkit-text-stroke: 0.3vw #FBCBE1;
+  width: 235vw;
+  margin-left: -60vw;
+  margin-top: 2vw;
 }
 
 .about_childhood {
@@ -116,9 +119,9 @@ body {
   align-items: center;
   position: absolute;
   left: 56vw;
-  top: -14vh;
+  top: -12vw;
   width: 67vw;
-  height: 5vh;
+  height: 2.5vw;
   color: black;
   transform: rotate(128deg);
 }
@@ -126,7 +129,7 @@ body {
 .about_childhood p{
   color: #FBCBE1;
   font-weight: bold;
-  font-size: 4vh;
+  font-size: 2.4vw;
 }
 
 .about_childhood {
@@ -138,11 +141,11 @@ body {
   justify-content: center;
   align-items: center;
   left: 60vw;
-  top: 30vh;
+  top: 19vw;
   background-color: #fff;
   border: 1vh solid black;
   width: 50vw;
-  height: 50vh;
+  height: 30vw;
   transform: rotate(-15deg);
   z-index: -3;
   position: fixed;
@@ -151,27 +154,27 @@ body {
 .about_happines p {
   display: flex;
   justify-content: center;
-  font-size: 4.3vh;
+  font-size: 2.6;
 }
 
 .thread_red {
   width: 15vw;
   position: fixed;
   left: 83vw;
-  top: -19vh;
+  top: -2vw;
 }
 
 .thread_pink {
   width: 28vw;
   position: fixed;
   left: -4vw;
-  top: 53vh;
+  top: 32vw;
 }
 
 .button {
   position: absolute;
   left: 77vw;
-  top: 73vh;
+  top: 37vw;
   width: 12vw;
 }
 
@@ -179,9 +182,9 @@ body {
 /* ВТОРАЯ ЧАСТЬ*/
 .cell {
     width: 200vw;
-    height: 310vh;
+    height: 205vw;
     position: absolute;
-    top: 37vh;
+    top: 20vw;
     left: -49vw;
     z-index: -6;
 }
@@ -193,20 +196,20 @@ body {
 
 .wow {
   transform: rotate(-11deg);
-  margin-top: -10vh;
+  margin-top: -5vw;
   margin-left: 24vw;
 }
 .wow p:first-child {
-  font-size: 20vh;
+  font-size: 12vw;
   color: #F33829;
-  -webkit-text-stroke: 0.5vh black;
+  -webkit-text-stroke: 0.3vw black;
 }
 
 .wow p:last-child {
-  font-size: 20vh;
+  font-size: 12vw;
   color: #FBCBE1;
-  -webkit-text-stroke: 0.5vh black;
-  margin-top: -18.5vh;
+  -webkit-text-stroke: 0.3vw black;
+  margin-top: -10vw;
   margin-left: -1.5vw;
 }
 
@@ -214,26 +217,26 @@ body {
   position: absolute;
   transform: rotate(-11deg);
   left: 24vw ;
-  top: 71vh;
+  top: 38vw;
   display: none;
 }
 .oops p:first-child {
-  font-size: 23vh;
+  font-size: 14vw;
   color: #107663;
-  -webkit-text-stroke: 0.5vh black;
+  -webkit-text-stroke: 0.3vw black;
 }
 
 .oops p:last-child {
-  font-size: 23vh;
+  font-size: 14vw;
   color: #89D5F6;
-  -webkit-text-stroke: 0.5vh black;
-  margin-top: -20.5vh;
+  -webkit-text-stroke: 0.3 black;
+  margin-top: -12vw;
   margin-left: -1.5vw;
 }
 
 .patch {
   width: 26vw;
-  margin-top: 10vh;
+  margin-top: 5vw;
   margin-left: 5vw;
 }
 
@@ -241,26 +244,26 @@ body {
 .about_treatment {
   display: block;
   width: 35vw;
-  margin-top: 3vh;
+  margin-top: 1.7vw;
 }
 .thorn {
   display: flex;
   justify-content: center;
   text-align: center;
   width: 69vw;
-  height: 63vh;
-  background-image: url(../img/thorn.png);
+  height: 39vw;
+  background-image: url(../img/thorn.svg);
   background-size: 37vw;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: -50vh;
+  margin-top: -28vw;
   margin-left: 32vw;
 }
 
 
 .thorn p {
-  font-size: 3vh;
-  margin-top: 29vh;
+  font-size: 1.7vw;
+  margin-top: 16vw;
   transform: rotate(-8deg);
   margin-left: 2vw;
   /*vertical-align: middle;*/
@@ -269,14 +272,14 @@ body {
 .heart_red {
   display: block;
   width: 10vw;
-  margin-top: -65vh;
+  margin-top: -39vw;
   margin-left: 24vw;
 }
 
 .heart_pink {
   display: block;
   width: 10vw;
-  margin-top: -12vh;
+  margin-top: -7vw;
   margin-left: 20vw;
 }
 
@@ -284,43 +287,61 @@ body {
   width: 20vw;
   height: 26vh;
   background-size: 18vw;
-  background-image: url(../img/smile_green_smile.png);
+  background-image: url(../img/smile_green_smile.svg);
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 31vh;
+  margin-top: 16vw;
   margin-left: 5vw;
+  display: block;
 }
 
-.smile_green div {
-  transform: rotate(-12deg);
+.smile_green_eye {
+  display: inline-block;
+  width: 9vw;
+  height: 9vw;
+  background-image: url(../img/smile_green_eye.svg);
+  background-size: 7vw;
+  background-repeat: no-repeat;
   margin-top: 5vh;
   margin-left: 1.6vw;
 }
 
-.smile_green_eye {
-  width: 7vw;
+.smile_green_eye_circle {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 2.5vw;
 }
 
-.smile_green_eye_div img:first-child {
-  margin-right: -1.4vw;
+.smile_green_eyes {
+  transform: rotate(-12deg);
+}
+
+.smile_green div {
+  margin-left: 1.4vw;
+  margin-top: 1vw;
+}
+.smile_green_eyes div:first-child {
+  margin-right: -3vw;
 }
 
 .sun {
   position: absolute;
   left: 3vw;
-  top: 82vh;
+  top: 48vw;
   display: none;
 }
 
 .smile_triangle {
-  background-image: url(../img/smile_triangle_smile.png);
+  background-image: url(../img/smile_rectangle_smile.svg);
   background-repeat: no-repeat;
   background-position: top;
   width: 30vw;
-  height: 40vh;
+  height: 22vw;
   background-size: 30vw;
   margin-left: 63vw;
-  margin-top: -84vh;
+  margin-top: -48vw;
 }
 
 .smile_triangle_eye {
@@ -329,7 +350,7 @@ body {
 
 .smile_triangle_eye_div {
   transform: rotate(20deg);
-  margin-bottom: -20vh;
+  margin-bottom: -12vw;
   margin-left: 13vw;
   transform: translateY(16vh);
 }
@@ -337,8 +358,9 @@ body {
 .angry {
   position: absolute;
   left: 67vw;
-  top: 39vh;
+  top: 21vw;
   display: none;
+  transition: translate 4s ease;
 }
 
 .candy_wrapper {
@@ -346,21 +368,21 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url(../img/candy_wrapper.png);
+  background-image: url(../img/candy_wrapper.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 60vw;
-  height: 60vh;
+  width: 65vw;
+  height: 40vw;
   background-size: 50vw;
-  transform: rotate(17deg);
   z-index: -1;
-  margin-top: -7vh;
+  margin-top: -4vw;
   margin-left: 31vw;
 }
 .candy_wrapper p {
   font-family: 'bodoni';
-  font-size: 10vh;
+  font-size: 5vw;
   color: #F33829;
+  transform: rotate(17deg);
 }
 
 
@@ -368,60 +390,60 @@ body {
 /*ТРЕТЬЯ ЧАСТЬ*/
 .section_three {
  position: absolute;
- top: 214vh;
+ top: 140vw;
 }
 
 .number {
  transform: rotate(-17deg);
  margin-left: 48vw;
- margin-top: 10vh;
+ margin-top: 5vw;
 }
  .number_one {
-   margin-top: -16vh;
+   margin-top: -9vw;
    margin-left: -1vw;
-  font-size: 17vh;
+  font-size: 10vw;
   color: #89D5F6;
-  -webkit-text-stroke: 0.5vh black;
+  -webkit-text-stroke: 0.3vw black;
  }
 
  .number_two {
-  font-size: 17vh;
+  font-size: 10vw;
   color: #fff;
-  -webkit-text-stroke: 0.5vh black;
+  -webkit-text-stroke: 0.3vw black;
  }
 
 .street {
   width: 20vw;
-  height: 7vh;
+  height: 4vw;
   background-color: #F33829;
-  border: 1vh solid black;
+  border: 0.5vw solid black;
   margin-left: 55vw;
   transform: rotate(10deg);
-  margin-top: 22vh;
+  margin-top: 14vw;
   z-index: 1;
   position: relative;
 }
 
 .street p {
-  font-size: 4vh;
+  font-size: 2.5vw;
   display: flex;
   justify-content: center;
-  margin-top: 1.2vh;
+  margin-top: 0.7vw;
 }
 
 .smile_bear {
-  background-image: url(../img/smile_bear_smile.png);
+  background-image: url(../img/smile_bear_smile.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 24vw;
-  height: 30vh;
+  height: 16vw;
   background-size: 20vw;
-  margin-top: 19vh;
+  margin-top: 11vw;
 }
 
 .smile_bear img {
   width: 5vw;
-  margin-top: 8vh;
+  margin-top: 5vw;
   margin-left: -2vw;
 }
 
@@ -431,24 +453,24 @@ body {
 }
 
 .smile_bear img:last-child {
-  margin-top: 10vh;
+  margin-top: 5vw;
 }
 
 .demon {
   position: absolute;
-  top: 74vh;
+  top: 36vw;
   display: none;
 }
 
 .smile_king {
-  background-image: url(../img/smile_king_smile.png);
+  background-image: url(../img/smile_king_smile.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 35vw;
-  height: 50vh;
+  height: 28vw;
   background-size: 30vw;
   margin-left: 60vw;
-  margin-top: -86vh;
+  margin-top: -47vw;
   z-index: 2;
   position: relative;
 }
@@ -456,7 +478,7 @@ body {
 .smile_king_crown {
   display: block;
   width: 5vw;
-  transform: translateY(12vh);
+  transform: translateY(6vw);
   margin-left: 19vw;
 }
 
@@ -464,20 +486,20 @@ body {
   position: absolute;
   width: 30vw;
   left: 62vw;
-  top: 23vh;
+  top: 16vw;
   z-index: 7;
   display: none;
 }
 .info {
   position: relative;
-  background-image: url(../img/jelly.png);
+  background-image: url(../img/jelly.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80vw;
   width: 80vw;
-  height: 70vh;
+  height: 39vw;
   margin-left: 20vw;
-  margin-top: -14vh;
+  margin-top: -8vw;
 }
 
 .info_instagram {
@@ -485,32 +507,32 @@ body {
   width: 5vw;
   transform: rotate(15deg);
   left: 36vw;
-  top: 56vh;
+  top: 30vw;
 }
 
 .info_vk {
   position: absolute;
-  top: 35vh;
+  top: 19vw;
   left: 24vw;
   transform: rotate(44deg);
 }
 
 .info_facebook {
   position: absolute;
-  top: 41vh;
+  top: 22vw;
   left: 42vw;
   transform: rotate(-21deg)
 }
 .info_share {
   position: absolute;
   width: 7vw;
-  top:  49vh;
+  top:  26vw;
   left: 54vw;
 }
 
 .name_of_hospital {
   position: relative;
-  margin-top: -76vh;
+  margin-top: -38vw;
   margin-left: 13vw;
 }
 
@@ -518,12 +540,13 @@ body {
   position: absolute;
 }
 
+
 .name_of_hospital p {
-  font-size: 2.5vh;
+  font-size: 1.8vw;
   color: black;
   position: absolute;
   left: 8vw;
-  top: 10vh;
+  top: 5vw;
   display: flex;
   text-align: center;
   width: 12vw;
@@ -536,25 +559,157 @@ body {
 
 .name_of_hospital img:nth-child(3) {
   left: 1.8vw;
-  top: 2.2vh;
+  top: 1.6vw;
 }
 
 .name_of_hospital img:nth-child(4) {
   left: 1.8vw;
-  top: 2.2vh;
+  top: 1.64vw;
 }
 
 .name_of_hospital img:nth-child(5) {
   left: 3.8vw;
-  top: 4.4vh;
+  top: 2.6vw;
 }
 .name_of_hospital img:nth-child(6) {
   left: 3.8vw;
-  top: 4.4vh;
+  top: 2.6vw;
 }
 
 #inst:hover {
   fill: red;
+}
+
+@media (max-width: 5120px) {
+  .thread_pink {
+    top: 28vw;
+  }
+  .about_memorise {
+    left: -15vw;
+    top: -6vw;
+  }
+  .yes {
+    left: 7vw;
+  }
+  .no {
+    left: 7vw;
+  }
+  .moving_phrase_rectangle {
+    top: 35vw
+  }
+  .coloring {
+    left: 53vw;
+    top: 6vw;
+    width: 36vw;
+  }
+  .coloring_after {
+    left: 53vw;
+    top: 6vw;
+    width: 36vw;
+  }
+  .button {
+    left: 73vw;
+    top: 39vw;
+  }
+  .thread_red {
+    left: 88vw;
+  }
+  .about_happines p {
+    font-size: 2.5vw;
+  }
+  .section_two {
+    top: 64vw;
+  }
+  .wow {
+    margin-top: -17vw;
+  }
+  .thorn {
+    margin-top: -30vw;
+  }
+  .wow p:last-child {
+    margin-top: -11vw;
+    margin-left: -1.3vw;
+  }
+  .heart_red {
+    margin-top: -30vw;
+  }
+  .smile_green {
+    margin-top: 6vw;
+    margin-left: 1vw;
+  }
+  .smile_green {
+    height: 26vh;
+    margin-top: 11vw;
+  }
+  .thorn p {
+    font-size: 2.4vw;
+    margin-top: 17vw;
+  }
+  .section_three {
+    top: 125vw;
+  }
+  .smile_bear {
+    height: 19vw;
+    margin-top: 2vw;
+  }
+  .demon {
+    width: 22vw;
+    top: 37vw;
+  }
+  .street {
+    margin-left: 47vw;
+  }
+  .smile_king {
+    background-size: 19vw;
+    margin-left: 55vw;
+    margin-top: -41vw;
+  }
+  .smile_king_crown {
+    transform: translateY(9vw);
+    margin-left: 19vw;
+  }
+  .info {
+    margin-left: 20vw;
+    margin-top: -12vw;
+  }
+  .name_of_hospital img {
+    width: 24vw;
+  }
+  .name_of_hospital img:nth-child(3) {
+    left: 1.8vw;
+    top: 1.2vw;
+    width: 21vw;
+  }
+  .name_of_hospital img:nth-child(4) {
+    left: 1.8vw;
+    top: 1.2vw;
+    width: 21vw;
+  }
+  .name_of_hospital img:nth-child(5) {
+    left: 3.2vw;
+    top: 2.3vw;
+    width: 18vw;
+  }
+  .name_of_hospital img:nth-child(6) {
+    left: 3.2vw;
+    top: 2.3vw;
+    width: 18vw;
+  }
+  .name_of_hospital p {
+    font-size: 2vw;
+    left: 6vw;
+    top: 5vw;
+  }
+  .name_of_hospital {
+    margin-top: -46vw;
+  }
+  .smile_triangle {
+    height: 25vw;
+    margin-top: -44vw;
+  }
+  .candy_wrapper {
+    margin-top: -14vw;
+ }
 }
 
 @media (max-width: 1920px) {
@@ -570,50 +725,55 @@ body {
 
   .about_memorise {
     left: -16vw;
-    top: -6vh;
+    top: -3vw;
   }
 
   .rectangle_smile_man {
-    top: 39vh;
+    top: 20vw;
   }
 
   .rectangle_smile_smile {
-    top: 55vh;
+    top: 28vw;
   }
 
   .moving_phrase_rectangle {
-    top: 33vw;
+    top: 34vw;
   }
 
   .moving_phrase_rectangle p {
-    margin-top: 0vh
+    margin-top: 1.4vw;
   }
 
   .coloring {
     left: 52vw;
-    top: 14vh;
-    width: 35vw;
+    top: 4vw;
+    width: 38vw;
     transform: rotate(-9deg);
   }
 
   .coloring_after {
     left: 52vw;
-    top: 14vh;
-    width: 35vw;
+    top: 4vw;
+    width: 38vw;
     transform: rotate(-9deg);
   }
 
   .about_childhood {
-    left: 58vw;
-    top: -18vh;
+    left: 64vw;
+    top: -13vw;
   }
 
   .about_happines {
-    width: 40vw;
+    width: 42vw;
+    height: 28vw;
+  }
+
+  .about_happines p{
+    font-size: 2.3vw;
   }
 
   .yellow_smile {
-    top: 53vh;
+    top: 28vw;
   }
 
   .button {
@@ -623,129 +783,177 @@ body {
   .thread_red {
     width: 14vw;
     transform: rotate(7deg);
-    top: -26vh;
+    top: -2vw;
   }
 
   .cell {
     width: 194vw;
-    height: 355vh;
-    top: 52vh;
+    height: 205vw;
+    top: 23vw;
   }
 
 /*SECOND SECTION*/
   .patch {
-    margin-top: 3vh;
+    margin-top: 4vw;
     width: 28vw;
   }
 
   .about_treatment {
     width: 33vw;
-    margin-top: -2vh;
+    margin-top: -1.2vw;
   }
 
   .wow {
-    margin-top: -43vh;
+    margin-top: -18vw;
   }
 
   .wow p:last-child {
-    font-size: 23vh;
-    -webkit-text-stroke: 0.5vh black;
-    margin-top: -20.5vh;
+    font-size: 12vw;
+    -webkit-text-stroke: 0.3vw black;
+    margin-top: -12vw;
     margin-left: -1.2vw;
   }
 
   .wow p:first-child {
-   font-size: 23vh;
+   font-size: 12vw;
   }
 
   .oops p:first-child {
-    font-size: 27vh;
+    font-size: 14vw;
   }
 
   .oops p:last-child {
-    font-size: 27vh;
-    margin-top: -25vh;
+    font-size: 14vw;
+    margin-top: -13vw;
     margin-left: -1vw;
   }
 
   .oops {
-    top: 41vh;
+    top: 26vw;
   }
 
   .heart_red {
-    margin-top: -43vh;
+    margin-top: -22vw;
   }
 
   .thorn {
-    margin-top: -58vh;
+    margin-top: -30vw;
   }
 
   .thorn p {
-    font-size: 4vh;
-    margin-top: 28vh;
+    font-size: 2.3vw;
+    margin-top: 17.5vw;
   }
 
   .smile_green {
     background-size: 16vw;
-    margin-top: 16vh;
+    margin-top: 5vw;
     margin-left: 1vw;
   }
 
+
   .smile_green div {
-    margin-left: 2.2vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+  }
+
+  .smile_green_eyes {
+    margin-left: 1.2vw;
   }
 
   .sun {
-    top: 61vh;
+    top: 37vw;
   }
 
   .candy_wrapper {
-    margin-top: -23vh;
+    margin-top: -19vw;
     margin-left: 29vw;
   }
 
   .smile_triangle {
     background-size: 24vw;
     margin-left: 63vw;
-    margin-top: -70vh;
+    margin-top: -34vw;
   }
 
   .angry {
     left: 70vw;
-    top: 32vh;
+    top: 22vw;
     width: 16vw;
+    animation: move_angry 2s ease infinite;
+  }
+
+  @keyframes move_angry {
+    0% {
+      transform: translate(-25%, 10%) rotate(-30deg);
+    }
+    10% {
+      transform: translate(-20%, 8%) rotate(-25deg);
+    }
+    20% {
+       transform: translate(-15%, 6%) rotate(-20deg);
+    }
+    30% {
+       transform: translate(-10%, 4%) rotate(-15deg);
+    }
+    40% {
+       transform: translate(-5%, 2%) rotate(-10deg);
+    }
+    50% {
+       transform: translate(0%, 0%) rotate(-5deg);
+    }
+    60% {
+       transform: translate(5%, 2%) rotate(0deg);
+    }
+    70% {
+       transform: translate(10%, 4%) rotate(5deg);
+    }
+    80% {
+       transform: translate(15%, 6%) rotate(10deg);
+    }
+    90% {
+       transform: translate(20%, 8%) rotate(15deg);
+    }
+    100% {
+       transform: translate(25%, 10%) rotate(20deg);
+    }
   }
 
 
+  .section_three {
+      top: 120vw;
+  }
+
   .number_two {
-    font-size: 23vh;
+    font-size: 15vw;
   }
 
   .number_one {
-    margin-top: -21vh;
+    margin-top: -13vw;
     margin-left: -1vw;
-    font-size: 22vh;
+    font-size: 14vw;
   }
 
   .street p {
-    font-size: 6vh;
+    font-size: 3.3vw;
   }
 
   .street {
     width: 24vw;
-    height: 9vh;
+    height: 5vw;
     margin-left: 47vw;
     margin-top: 32vh;
   }
 
   .smile_bear {
-    height: 36vh;
-    margin-top: 16vh;
+    height: 20vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
   }
 
   .demon {
-    top: 93vh;
-    left: 1vw;
+    top: 47vw;
+    left: 2vw;
     width: 21vw;
   }
 
@@ -756,15 +964,15 @@ body {
   .sad {
     width: 27vw;
     left: 64vw;
-    top: 40vh;
+    top: 24vw;
   }
 
   .info {
-    margin-top: -5vh;
+    margin-top: -5.5vw;
   }
 
   .name_of_hospital {
-    margin-top: -95vh;
+    margin-top: -50vw;
   }
 
   .name_of_hospital img {
@@ -777,82 +985,106 @@ body {
 
   .name_of_hospital img:nth-child(3) {
     left: 1.5vw;
-    top: 2.2vh;
+    top: 1.4vw;
     width: 25vw;
   }
 
   .name_of_hospital img:nth-child(5) {
     left: 3.0vw;
-    top: 4.6vh;
+    top: 2.8vw;
     width: 22vw;
   }
 
   .name_of_hospital p {
-    font-size: 3.8vh;
-    top: 12vh;
+    font-size: 2.2vw;
+    top: 6.5vw;
     transform: rotate(15deg);
   }
 }
 
 @media (max-width: 1860px) {
+
+  .thread_pink {
+    left: 0vw;
+  }
+  .section_two {
+    top: 70vw;
+  }
   .cell {
-    top: 45vh;
+    top: 25vw;
   }
 
   .wow {
-    margin-top: -38vh;
+    margin-top: -17vw;
     margin-left: 23vw;
   }
 
   .oops {
-    margin-top: -38vh;
-    margin-left: 23vw;
+    margin-top: 1vw;
+    margin-left: 0vw;
   }
 }
 
 @media (max-width: 1740px) {
   .section_two {
-    margin-top: 5vh;
+    margin-top: -1vw;
   }
 
   .wow {
-    margin-top: -35vh;
+    margin-top: -18vw;
   }
 
   .oops {
-    top: 43vh;
+    top: 0vw;
+  }
+
+  .thorn p {
+    margin-top: 17vw;
   }
 
   .number {
-    margin-left: 57vw;
+    margin-left: 52vw;
+  }
+
+  .section_three {
+    top: 131vw;
   }
 }
 
 
 @media (max-width: 1680px) {
   .cell{
-    top: 37vh;
+    top: 23vw;
+  }
+
+  .section_two {
+    margin-top: -3vw;
   }
 
   .wow {
-    margin-top: -37vh;
+    margin-top: -20vw;
     margin-left: 25vw;
   }
 
   .oops {
-    top: 39vh;
+    top: 23vw;
   }
 
   .heart_red {
-    margin-top: -41vh;
+    margin-top: -21vw;
   }
 
   .thorn {
-    margin-top: -54vh;
+    margin-top: -30vw;
+  }
+
+  .thorn p{
+    margin-top: 18vw;
   }
 
   .smile_green {
     background-size: 18vw;
+    margin-top: 3vw;
   }
 
   .smile_green_eye {
@@ -864,22 +1096,27 @@ body {
   }
 
   .sun {
-    top: 63vh;
+    top: 38vw;
     left: 1vw;
+  }
+
+  .angry {
+    top: 24vw;
   }
 
   .smile_triangle {
     background-size: 26vw;
+    margin-top: -36vw
   }
 
   .candy_wrapper {
-    margin-top: -20vh;
+    margin-top: -25vw;
   }
 
 /*SECTION THREE*/
   .section_three {
     position: absolute;
-    top: 207vh;
+    top: 120vw;
   }
 
   .number {
@@ -887,250 +1124,238 @@ body {
   }
 
   .street {
-    margin-top: 28vh;
+    margin-top: 15vw;
   }
 
   .smile_bear {
-    margin-top: 11vh;
+    margin-top: -3vw;
   }
 
   .smile_bear img {
     width: 5vw;
-    margin-top: 10vh;
+    margin-top: 6vw;
     margin-left: -2vw;
   }
 
+  .smile_king {
+    margin-top: -41vw;
+  }
+
+  .sad {
+    width: 26vw;
+    left: 65vw;
+    top: 23vw;
+  }
+
   .demon {
-    top: 86vh;
+    top: 48vw;
   }
 
   .info {
-    margin-top: -10vh;
+    margin-top: -15vw;
+  }
+
+  .name_of_hospital {
+    margin-top: -55vw;
   }
 }
 
 @media (max-width: 1640px) {
   .cell {
-    top: 33vh;
+    top: 24vw;
   }
 
   .section_two {
-    margin-top: 1vh;
+    margin-top: -1vw;
   }
 
   .wow {
-    margin-top: -32vh;
+    margin-top: -19vw;
   }
 
   .oops{
-    margin-top: -32vh;
+    margin-top: 2vw;
+  }
+
+  .thorn {
+    margin-top: -33vw;
+  }
+
+  .thorn p {
+    margin-top: 16vw;
+  }
+
+  .smile_green {
+    margin-top: 8vw;
+  }
+
+  .candy_wrapper {
+    margin-top: -20vw;
+  }
+
+  .info {
+    margin-top: -10vw;
+  }
+
+  .number_one {
+    margin-top: -13.6vw;
+    margin-left: -0.6vw;
   }
 }
 
-@media (max-width: 1620px) {
-  .about_happines {
-    width: 44vw;
-    height: 52vh;
-    left: 58vw;
-   }
-}
 
 @media (max-width: 1570px) {
 
 } {
   .cell {
-    top: 35vh;
+    top: 19vw;
   }
 
   .section_two {
-    margin-top: -1vh;
+    margin-top: -0.5vw;
   }
 
   .wow {
-    margin-top: -33vh;
+    margin-top: -18vw;
+  }
+
+  .candy_wrapper {
+    margin-top: -23vw;
+  }
+
+  .thorn p {
+    margin-top: 17vw;
   }
 
   .oops{
-    margin-top: -33vh;
+    margin-top: -18vw;
   }
 
   .smile_green_eye {
     width: 7vw;
   }
 
+  .section_three {
+    top: 123vw;
+  }
+
   .name_of_hospital img:nth-child(5) {
-    top: 6;
+    top: 3vw;
   }
 
   .name_of_hospital img:nth-child(6) {
-    top: 6;
+    top: 3vw;
   }
 
   .name_of_hospital p {
-    top: 11vh;
+    top: 6vw;
   }
 }
 
 @media (max-width: 1530px) {
+
+  .moving_phrase_rectangle {
+    top: 32vw;
+  }
+
+  .rectangle_smile_smile {
+    top: 26vw;
+  }
+
+  .rectangle_smile_man {
+    top: 18vw;
+  }
+
   .cell {
-    top: 31vh;
+    top: 22vw;
+  }
+
+  .section_two {
+    margin-top: -3vw;
   }
 
   .about_happines p {
-    font-size: 4.1vh;
+    font-size: 2.2vw;
+  }
+
+  .smile_king {
+    margin-top: -38vw;
+ }
+
+ .info {
+    margin-top: -14vw;
   }
 
   .about_happines {
-    height: 50vh;
+    height: 27vw;
   }
 
   .wow {
-    margin-top: -31vh;
+    margin-top: -18vw;
 
   }
 
   .oops{
-    margin-top: -31vh;
+    margin-top: -18vw;
   }
 
   .section_three {
-    top: 201vh;
-  }
-
-  .rectangle_smile_man {
-    top: 33vh;
-  }
-
-  .rectangle_smile_smile {
-    top: 47vh;
+    top: 120vw;
   }
 }
 
-@media (max-media: 1490px) {
-  .moving_phrase_rectangle p {
-    margin-top: 2vh;
-  }
-}
+
 
 @media (max-width: 1460px) {
-  .section_two {
-    margin-top: 6vh;
+  .candy_wrapper {
+    margin-top: -23vw;
   }
 
-  .wow {
-    margin-top: -29vh;
-  }
-
-  .name_of_hospital img:nth-child(5) {
-    top: 4.3vh;
-  }
-
-  .name_of_hospital img:nth-child(6) {
-    top: 4.3vh;
-  }
-
-  .name_of_hospital p {
-    top: 10vh;
+  .thorn p {
+    margin-top: 18vw;
   }
 }
 
 @media (max-width: 1440px) {
-
-  .moving_phrase_rectangle {
-    top: 36vw;
- }
-
-  .moving_phrase_rectangle p {
-    margin-top: 2vh;
-  }
-
-  .name_of_hospital img:nth-child(3) {
-    top: 2.0vh;
-  }
-
-  .name_of_hospital img:nth-child(4) {
-    top: 2.0vh;
-  }
-
-  .name_of_hospital img:nth-child(5) {
-    left: 2.9vw;
-    top: 4.0vh;
-  }
-
-
-  .name_of_hospital img:nth-child(6) {
-    left: 2.9vw;
-    top: 4.0vh;
-  }
-
-  .name_of_hospital p {
-    top: 9.8vh;
+  .thorn p {
+    margin-top: 17vw;
   }
 }
-
 @media (max-width: 1390px) {
   .coloring {
-    top: 11vh;
-    width: 39vw;
-  }
-
-  .coloring_after {
-    top: 11vh;
+    top: 3vw;
     width: 39vw;
   }
 
   .section_two {
-    margin-top: 10vh;
+    margin-top: -3vw;
+  }
+
+  .thorn p {
+    margin-top: 17vw;
+  }
+
+  .coloring_after {
+    top: 6vw;
+    width: 39vw;
+  }
+
+  .section_two {
+    margin-top: -2vw;
   }
 
   .name_of_hospital p {
-    top: 8.9vh;
-    left: 7.2vw;
+    top: 6vw;
+    left: 7.6vw;
   }
 
   .about_happines {
-    width: 49vw;
+    width: 44vw;
   }
 }
 
-@media (max-width: 1379px) {
-  .wow {
-    margin-top: -27vh;
-  }
 
-  .about_happines {
-    width: 48vw;
-  }
 
-  .section_three {
-    top: 197vh;
-  }
-
-  .name_of_hospital img:nth-child(3) {
-    top: 2.2vh;
-    left: 1.5vw;
-    top: 2vh;
-  }
-
-  .name_of_hospital p {
-    font-size: 3.4vh;
-    top: 10vh;
-  }
-}
-
-@media (max-width: 1360px) {
-  .name_of_hospital img:nth-child(5) {
-    top: 3.8vh;
-  }
-
-  .name_of_hospital img:nth-child(6) {
-    top: 3.8vh;
-  }
-
-  .about_childhood {
-    top: -23vh;
-  }
-}
 
 @media (max-width: 1340px) {
   .smile_green {
@@ -1138,108 +1363,103 @@ body {
   }
 
   .candy_wrapper {
-    margin-top: -17vh;
+    margin-top: -25vw;
   }
 
   .thread_red {
-    top: -8vh;
+    top: -6vw;
+  }
+
+  .thread_pink {
+    top: 36vw;
   }
 }
 
-@media (max-width:1330px) {
-
-  .rectangle_smile_smile {
-    top: 45vh;
-  }
-  .section_two {
-    margin-top: 17vh;
-  }
-
-  .name_of_hospital p {
-    top: 9vh;
-  }
-
-  .info {
-    margin-top: -17vh;
-  }
-
-  .name_of_hospital {
-    margin-top: -83vh;
-  }
-}
 
 
 @media (max-width: 1220px) {
   .about_happines {
-    width: 52vw;
+    width: 40vw;
   }
 
   .moving_phrase_rectangle {
-    top: 38vw;
+    top: 32vw;
   }
 
   .thread_pink {
-    top: 60vh;
+    top: 35vw;
   }
 
   .section_two {
-    margin-top: 29vh;
+    margin-top: -2vw;
   }
 
   .thorn p {
-    font-size: 3.4vh;
+    font-size: 2.2vw;
   }
 
   .heart_red {
-    margin-top: -35vh;
+    margin-top: -22vw;
   }
 
   .smile_triangle {
     background-size: 28vw;
-    margin-left: 70vw;
+    margin-left: 57vw;
   }
 
   .section_three {
-    top: 210vh;
+    top: 120vw;
   }
 
   .name_of_hospital img:nth-child(3) {
-    top: 1.8vh;
+    top: 1.2vw;
   }
 
   .name_of_hospital img:nth-child(4) {
-    top: 1.8vh;
+    top: 1.2vw;
   }
 
   .name_of_hospital img:nth-child(5) {
-    top: 3.5vh;
+    top: 2.4vw;
   }
 
   .name_of_hospital img:nth-child(6) {
-    top: 3.5vh;
+    top: 2.4vw;
   }
 
   .name_of_hospital p {
-    top: 8.3vh;
-    font-size: 3.2vh;
+    top: 5.8vw;
+    font-size: 2.2vw;
   }
 
   .cell {
-    width: 227vw;
+    width: 200vw;
     left: -55vw;
   }
 }
 
 @media (max-width: 1140px) {
   .about_happines {
-    width: 56vw;
+    width: 41vw;
   }
 }
 
 @media (max-width: 1115px) {
   .section_two {
-    margin-top: 15vh;
+    margin-top: -2vw;
   }
+
+  .candy_wrapper {
+    margin-top: -21vw;
+ }
+
+  .about_childhood {
+    top: -15vw;
+ }
+
+ .smile_triangle {
+   margin-top: -39vw;
+ }
 }
 
 @media (max-width: 825px) {
@@ -1251,53 +1471,53 @@ body {
   /*FIRST SECTION*/
   .thread_pink {
     width: 46vw;
-    left: -8vw;
-    top: 61vh;
+    left: -4vw;
+    top: 81vw;
   }
 
   .about_memorise {
-    height: 4vh;
+    height: 5vw;
     transform: rotate(67deg);
     left: -11vw;
-    top: 12vh;
+    top: 10vw;
   }
 
   .yes {
     width: 24vw;
     left: 2vw;
-    top: 28vh;
+    top: 36vw;
   }
 
   .no {
     width: 24vw;
     left: 2vw;
-    top: 28vh;
+    top: 36vw;
   }
 
   .rectangle_smile_man {
     width: 37vw;
     left: 22vw;
-    top: 53vh;
+    top: 64vw;
     transform: rotate(12deg);
 }
 
 .rectangle_smile_smile {
     width: 17vw;
     left: 30.9vw;
-    top: 63vh;
+    top: 77vw;
 }
 
 .moving_phrase_rectangle p {
-    font-size: 10vw;
-    -webkit-text-stroke: 0.3vh #FBCBE1;
+    font-size: 12vw;
+    -webkit-text-stroke: 0.4vw #FBCBE1;
     width: 120vw;
     margin-left: 2vw;
-    margin-top: 2.5vh;
+    margin-top: 3vw;
   }
 
 .moving_phrase_rectangle {
     width: 73vw;
-    height: 13vh;
+    height: 17vw;
     left: 6vw;
     top: 90vw;
     transform: rotate(13deg);
@@ -1305,43 +1525,50 @@ body {
 
 .coloring {
     left: 40vw;
-    width: 61vw;
+    width: 62vw;
+    top: 18vw;
 }
 
 .coloring_after {
     left: 40vw;
-    width: 61vw;
+    width: 62vw;
+    top: 18vw;
 }
 
 .about_childhood p {
-    font-size: 3vh;
+    font-size: 4vw;
   }
 
+  .about_childhood {
+    left: 68vw;
+ }
+
 .about_happines {
-    left: 43vw;
-    top: 37vh;
-    width: 75vw;
-    height: 37vh;
+    left: 41vw;
+    top: 42vw;
+    width: 74vw;
+    height: 46vw;
  }
 
  .about_happines p {
-    font-size: 3.2vh;
+    font-size: 4vw;
 }
 
   .yellow_smile {
-      width: 10vw;
+      width: 11vw;
+      top: 71vw;
   }
 
   .button {
-      left: 82vw;
-      top: 79vh;
+      left: 59vw;
+      top: 3vw;
       width: 15vw;
   }
 
   .thread_red {
-      width: 23vw;
+      width: 30vw;
       position: fixed;
-      left: 86vw;
+      left: 81vw;
       top: 1vh;
       transform: rotate(4deg);
   }
@@ -1350,8 +1577,8 @@ body {
 
   .cell {
     width: 224vw;
-    height: 169vh;
-    top: 71vh;
+    height: 228vw;
+    top: 88vw;
     left: -54vw;
   }
 
@@ -1359,88 +1586,99 @@ body {
 
   /*SECOND SECTION*/
   .section_two {
-    margin-top: 75vh;
+    margin-top: 89vw;
   }
 
   .patch {
     width: 34vw;
-    margin-top: -24vh;
+    margin-top: -16vw;
     margin-left: 5vw;
   }
 
   .about_treatment {
-    width: 40vw;
+    width: 43vw;
     transform: rotate(10deg);
+    margin-top: 6vw;
   }
 
   .wow p:last-child {
-    font-size: 14vh;
-    margin-top: -12.5vh;
-    margin-left: -2.5vw;
+    font-size: 18vw;
+    margin-top: -17vw;
+    margin-left: -2vw;
   }
 
   .wow p:first-child {
-    font-size: 14vh;
+    font-size: 18vw;
   }
 
   .wow {
     transform: rotate(6deg);
-    margin-top: 4vh;
+    margin-top: 5vw;
     margin-left: 13vw;
   }
 
   .heart_red {
-    width: 13vw;
-    margin-top: -49vh;
-    margin-left: 35vw;
+    width: 16vw;
+    margin-top: -65vw;
+    margin-left: 30vw;
   }
 
   .heart_pink {
-      width: 12vw;
-      margin-top: -8vh;
-      margin-left: 30vw;
+      width: 15vw;
+      margin-top: -10vw;
+      margin-left: 25vw;
   }
 
   .thorn {
       width: 69vw;
       height: 63vh;
       background-size: 46vw;
-      margin-top: -35vh;
+      margin-top: -57vw;
       margin-left: 37vw;
    }
 
   .thorn p {
-      font-size: 2vh;
+      font-size: 3vw;
       margin-left: 5vw;
+      margin-top: 39vw;
    }
    .smile_green {
     width: 20vw;
-    height: 26vh;
+    height: 31vw;
     background-size: 26vw;
-    margin-top: 23vh;
+    margin-top: 19vw;
     margin-left: 9vw;
   }
 
   .smile_green_eye {
-    width: 8vw;
+    background-size: 9vw;
+    width: 9vw;
     margin-top: 7vh;
   }
   .smile_green div {
-    margin-left: 0.6vw;
+    margin-left: 0.3vw;
+    margin-top: 7vw;
   }
 
-  .smile_green  img:last-child {
-    margin-left: -1.4vw;
+  .smile_green_eye div {
+    margin-top: 3vw;
+    margin-left: 2vw;
+  }
+
+  .smile_green_eyes div:first-child {
+    margin-right: -2vw;
   }
 
   .smile_triangle {
-    background-size: 35vw;
-    margin-top: -75vh;
+    background-size: 41vw;
+    margin-top: -80vw;
+    height: 40vw;
   }
 
   .candy_wrapper {
-    background-size: 60vw;
-    margin-top: -19vh;
+    background-size: 62vw;
+    margin-top: -7vw;
+    height: 46vw;
   }
 
   .candy_wrapper p {
@@ -1454,35 +1692,37 @@ body {
 
   .number {
     margin-left: 57vw;
+    margin-top: 2vw;
   }
   .number_one {
-    font-size: 13vh;
-    -webkit-text-stroke: 0.3vh black;
-    margin-top: -12vh;
+    font-size: 17vw;
+    -webkit-text-stroke: 0.5vw black;
+    margin-top: -16vw;
     margin-left: -2vw;
   }
   .number_two {
-    font-size: 13vh;
-    -webkit-text-stroke: 0.3vh black;
+    font-size: 17vw;
+    -webkit-text-stroke: 0.5vw black;
   }
 
   .street {
     width: 36vw;
-    height: 5vh;
-    border: 0.5vh solid black;
+    height: 7vw;
+    border: 0.7vw solid black;
     margin-left: 48vw;
     transform: rotate(28deg);
-    margin-top: 29vh;
+    margin-top: 43vw;
   }
 
   .street p {
-    font-size: 3vh;
+    font-size: 5vw;
   }
 
   .smile_bear {
     background-size: 27vw;
-    margin-top: -9vh;
+    margin-top: -9vw;
     margin-left: 9vw;
+    height: 25vw;
   }
 
   .smile_bear img:first-child {
@@ -1496,27 +1736,35 @@ body {
   }
 
   .smile_bear img:last-child {
-    margin-top: 12vh;
+    margin-top: 9vw;
   }
 
   .smile_king {
     margin-left: 60vw;
-    margin-top: -60vh;
+    margin-top: -49vw;
     background-size: 32vw;
     transform: rotate(-28deg);
+    height: 33vw;
   }
 
   .smile_king_crown {
-    transform: translateY(19vh);
+    transform: translateY(8vw);
     margin-left: 18vw;
+  }
+
+  .sad {
+    width: 32vw;
+    left: 62vw;
+    top: 36vw;
+    transform: rotate(-28deg);
   }
 
   .info {
     background-size: 106vw;
     width: 95vw;
-    height: 41vh;
+    height: 53vw;
     margin-left: 3vw;
-    margin-top: -8vh;
+    margin-top: 2vw;
   }
 
   .info_vk {
@@ -1541,7 +1789,7 @@ body {
   }
 
   .name_of_hospital {
-    margin-top: -69vh;
+    margin-top: -88vw;
     margin-left: 5vw;
   }
     .name_of_hospital img {
@@ -1549,9 +1797,9 @@ body {
     }
 
   .name_of_hospital p {
-    font-size: 1.9vh;
+    font-size: 2.9vw;
     left: 11vw;
-    top: 6vh;
+    top: 8vw;
   }
 
   .name_of_hospital img:nth-child(2) {
@@ -1561,137 +1809,139 @@ body {
   .name_of_hospital img:nth-child(3) {
     width: 32vw;
     left: 2.6vw;
-    top: 1.6vh;
+    top: 1.9vw;
   }
 
   .name_of_hospital img:nth-child(4) {
     width: 32vw;
     left: 2.6vw;
-    top: 1.6vh;
+    top: 1.9vw;
   }
 
   .name_of_hospital img:nth-child(5) {
     width: 27vw;
     left: 4.8vw;
-    top: 2.9vh;
+    top: 3.7vw;
   }
   .name_of_hospital img:nth-child(6) {
     width: 27vw;
     left: 4.8vw;
-    top: 2.9vh;
+    top: 3.7vw;
   }
 }
 
 @media (max-width: 640px) {
-  .street {
-    margin-top: 34vh;
+  .yellow_smile {
+    left: 81vw;
   }
 
-  .smile_bear {
-    margin-top: -13vh;
-  }
-
-  .smile_bear img:last-child {
-    margin-top: 15vh;
-  }
-
-  .name_of_hospital p {
-    left: 12vw;
-  }
-
-  .cell {
-    height: 176vh;
-  }
-
-  .heart_red {
-    margin-top: -45vh;
+  .thorn {
+    margin-top: -71vw;
   }
 
   .thorn p {
-    margin-top: 30vh;
+    margin-top: 48vw;
+  }
+
+  .smile_triangle {
+    margin-top: -88vw;
+  }
+
+  .section_three {
+    top: 263vw;
+  }
+
+  .street {
+    margin-top: 39vw;
   }
 }
+
 
 @media (max-width: 605px) {
-  .rectangle_smile_man {
-    top: 50vh;
-  }
-
-  .rectangle_smile_smile {
-    top: 60vh;
-  }
-
-  .yellow_smile {
-    width: 11vh;
-    left: 79vw;
-  }
-}
-
-@media (max-width: 580px) {
   .about_happines {
     width: 82vw;
   }
 
   .thread_pink {
     width: 51vw;
-    top: 64vh;
+    top: 80vw;
   }
 
   .rectangle_smile_man {
-    top: 46vh;
+    top: 66vw;
   }
 
   .rectangle_smile_smile {
-    top: 55vh;
+    top: 79vw;
   }
 
   .thread_red {
-      width: 28vw;
-      left: 76vw;
-      top: -1vh;
+    width: 28vw;
+    left: 76vw;
+    top: -3vw;
+    transform: rotate(10deg);
+  }
+
+  .thorn p {
+    margin-top: 43vw;
   }
 
   .coloring {
     left: 40vw;
     width: 65vw;
-    top: 14vh;
+    top: 14vw;
+  }
+  .smile_green div {
+    margin-left: 0.1vw;
   }
 
   .coloring_after {
     left: 40vw;
     width: 65vw;
-    top: 14vh;
+    top: 14vw;
   }
 
   .button {
     left: 23vw;
-    top: 83vh;
+    top: 3vw;
   }
 
   .about_childhood {
-    top: -17vh;
+    top: -17vw;
     left: 67vw;
   }
+
+  .candy_wrapper {
+    margin-top: 8vw;
+  }
+
+  .yellow_smile {
+    top: 89vw;
+  }
+
 }
 
 @media (max-width: 505px) {
   .about_happines {
-    width: 89vw;
+    width: 76vw;
+    margin-left: 3vw;
+    top: 56vw;
   }
 
   .section_two {
-    margin-top: 82vh;
+    margin-top: 91vw;
   }
 
   .smile_king {
     margin-left: 58vw;
-    margin-top: -60vh;
+    margin-top: -60vw;
     width: 39vw;
     background-size: 38vw;
+    height: 39vw;
   }
 
   .smile_king_crown {
-    transform: translateY(17vh);
+    transform: translateY(7vw);
     width: 8vw;
   }
 
@@ -1701,21 +1951,45 @@ body {
   }
 
   .smile_bear img:last-child {
-    margin-top: 16vh;
+    margin-top: 14vw;
   }
 
   .smile_bear img:first-child {
     margin-left: 9vw;
   }
 
+  .coloring {
+    left: 37vw;
+    top: 22vw;
+  }
+
+  .coloring_after {
+    left: 37vw;
+    top: 22vw;
+  }
+
   .heart_red {
-    margin-top: -48vh;
+    margin-top: -69vw;
     width: 17vw;
   }
 
   .thorn {
-    margin-top: -43vh;
-}
+    margin-top: -75vw;
+  }
+
+  .thorn p {
+    margin-top: 53vw;
+  }
+
+  .street {
+    margin-top: 34vw;
+ }
+
+ .smile_bear {
+    background-size: 33vw;
+    width: 30vw;
+    height: 33vw;
+  }
 
 
   .heart_pink {
@@ -1724,64 +1998,80 @@ body {
 
   .about_treatment {
     width: 47vw;
-    margin-top: 3vh;
+    margin-top: 3vw;
   }
 
   .smile_triangle {
-    background-size: 46vw;
-    margin-top: -72vh;
+    background-size: 44vw;
+    margin-top: -96vw;
     margin-left: 62vw;
   }
 
-  .smile_green {
-    width: 22vw;
-    background-size: 28vw;
+  .smile_green_eye div {
+    margin-left: 0vw;
+ }
+  .candy_wrapper {
+    margin-top: 1vw;
   }
 
-  .smile_green_eye {
-    width: 9vw;
+  .info {
+    margin-top: 6vw;
   }
+
+  .name_of_hospital {
+    margin-top: -92vw;
+  }
+
 }
 
 @media (max-width: 450px) {
   .moving_phrase_rectangle {
-    top: 99vw;
+    top: 90vw;
   }
 
   .moving_phrase_rectangle p {
     font-size: 13vw;
-    margin-top: 2.1vh;
+    margin-top: 2.1vw;
     width: 167vw;
+  }
+
+  .smile_green {
+    margin-top: 4vw;
   }
 
   .smile_triangle {
     width: 33vw;
   }
 
+  .thorn p {
+    margin-top: 59vw;
+    margin-left: 8vw;
+  }
+
   .name_of_hospital img:nth-child(3) {
     width: 32vw;
     left: 2.6vw;
-    top: 1.2vh;
+    top: 2vw;
   }
 
   .name_of_hospital img:nth-child(4) {
-    top: 1.2vh;
+    top: 2vw;
   }
 
   .name_of_hospital img:nth-child(5) {
-    top: 2.4vh;
+    top: 3.9vw;
   }
   .name_of_hospital img:nth-child(6) {
-    top: 2.4vh;
+    top: 3.9vw;
   }
 
   .name_of_hospital p {
     left: 11vw;
-    top: 5vh;
+    top: 8vw;
   }
 
   .street {
-    margin-top: 30vh;
+    margin-top: 30vw;
   }
 
 }
@@ -1791,20 +2081,20 @@ body {
   .thread_pink {
     width: 66vw;
     left: -15vw;
-    top: 61vh;
+    top: 132vw;
     transform: rotate(11deg);
     z-index: -1;
   }
   .yes {
-    width: 31vw;
+    width: 35vw;
     left: 4vw;
-    top: 19vh;
+    top: 40vw;
   }
 
   .no {
-    width: 31vw;
+    width: 35vw;
     left: 4vw;
-    top: 19vh;
+    top: 40vw;
   }
 
   .about_memorise {
@@ -1820,506 +2110,373 @@ body {
 
   .rectangle_smile_man {
     left: 16vw;
-    top: 56vh;
+    top: 128vw;
   }
 
   .rectangle_smile_smile {
     left: 24.9vw;
-    top: 63vh;
+    top: 140vw;
   }
 
   .moving_phrase_rectangle {
     width: 66vw;
-    height: 10vh;
+    height: 15vw;
     left: 6vw;
-    top: 136vw;
+    top: 152vw;
   }
 
   .moving_phrase_rectangle p {
     font-size: 10vw;
-    -webkit-text-stroke: 0.2vh #FBCBE1;
-    margin-top: 2.2vh;
+    -webkit-text-stroke: 0.3vw #FBCBE1;
+    margin-top: 2.2vw;
   }
 
   .coloring {
-    left: 33vw;
+    left: 26vw;
     width: 77vw;
-    top: 25vh;
-    transform: rotate(-18deg);
+    top: 66vw;
+    transform: rotate(0deg);
   }
 
   .coloring_after {
-    left: 33vw;
+    left: 26vw;
     width: 77vw;
-    top: 25vh;
-    transform: rotate(-18deg);
+    top: 66vw;
+    transform: rotate(0deg);
   }
 
   .about_childhood {
-    left: 85vw;
+    left: 76vw;
   }
 
   .about_happines {
     left: 35vw;
-    top: 40vh;
-    width: 108vw;
+    top: 93vw;
+    width: 116vw;
+    height: 70vw;
   }
 
   .about_happines p {
-    font-size: 3.2vh;
+    font-size: 6.2vw;
   }
 
   .yellow_smile {
     width: 19vw;
-    left: 74vw;
-    top: 61vh;
+    left: 72vw;
+    top: 134vw;
   }
 
   .button {
-    left: 35vw;
-    top: 85vh;
+    left: 3vw;
+    top: 20vw;
     width: 26vw;
   }
 
   .thread_red {
     width: 32vw;
     z-index: -1;
-    left: 76vw;
-    top: 5vh;
-    transform: rotate(7deg);
+    left: 75vw;
+    top: 32vw;
+    transform: rotate(8deg);
   }
-
 
   .cell {
-    width: 282vw;
-    height: 177vh;
-    top: 71vh;
-    left: -66vw;
+      height: 353vw;
+      top: 135vw;
+      width: 270vw;
+      left: -66vw;
   }
 
-
-/*SECOND SECTION*/
   .section_two {
-    margin-top: 86vh;
+    margin-top: 162vw;
   }
 
   .patch {
-    width: 44vw;
+    width: 47vw;
+    margin-top: -16vw;
+    margin-left: 3vw;
   }
 
   .about_treatment {
-    width: 58vw;
-    transform: rotate(11deg);
+    width: 54vw;
+    margin-top: 24vw;
   }
 
   .wow p:first-child {
-   font-size: 11vh;
-   -webkit-text-stroke: 0.3vh black;
+    font-size: 20vw;
+    -webkit-text-stroke: 0.4vw black
   }
 
   .wow p:last-child {
-    font-size: 11vh;
-    margin-top: -10.5vh;
-    margin-left: -2.5vw;
-    -webkit-text-stroke: 0.3vh black;
+    margin-top: -18vw;
+    margin-left: -3vw;
+    font-size: 20vw;
+    -webkit-text-stroke: 0.4vw black
   }
 
-  .wow {
-    transform: rotate(13deg);
-    margin-top: 6vh;
+  .oops {
+    margin-top: -17vw;
+    transform: rotate(6deg)
   }
 
   .heart_red {
-    width: 16vw;
-    margin-top: -41vh;
+    margin-top: -89vw;
+    width: 23vw;
+    margin-left: 23vw;
   }
 
   .heart_pink {
-    width: 16vw;
-    margin-left: 27vw;
+    width: 22vw;
+    margin-top: -16vw;
+    margin-left: 14vw;
   }
 
   .thorn {
-    background-size: 51vw;
-    margin-top: -41vh;
+    margin-top: -98vw;
+    background-size: 53vw;
+    margin-left: 37vw;
   }
 
   .thorn p {
-    font-size: 1.7vh;
+    margin-top: 64vw;
     margin-left: 8vw;
-    margin-top: 30vh;
+    font-size: 3.5vw
   }
 
   .smile_green {
-    width: 27vw;
-    background-size: 32vw;
-    margin-top: 21vh;
-    margin-left: 5vw;
+    width: 29vw;
+    height: 31vw;
+    background-size: 35vw;
+    margin-top: 49vw;
+    margin-left: 4vw;
   }
 
   .smile_green_eye {
+    background-size: 11vw;
+    height: 11vw;
     width: 11vw;
-    margin-top: 8vh;
+    margin-top: 7vh;
   }
 
-  .sun {
-    left: -1vw;
-    width: 40vw;
-    top: 51vh;
-  }
-
-  .smile_triangle {
-    background-size: 52vw;
-    margin-top: -71vh;
-    margin-left: 59vw;
-    width: 39vw;
-  }
-
-  .angry {
-    left: 60vw;
-    width: 34vw;
-    top: 10vh;
+  .smile_green_eye div {
+    margin-left: 4vw;
   }
 
   .candy_wrapper {
-    background-size: 80vw;
-    margin-top: -24vh;
-    margin-left: 22vw;
-    width: 69vw;
+    background-size: 75vw;
+    width: 75vw;
+    margin-top: 6vw;
+    margin-left: 17vw;
+    height: 55vw;
   }
 
-  /*SECTION THREE*/
-
-  .section_three {
-    margin-top: -7vh;
-  }
-
-  .smile_bear {
-    background-size: 35vw;
-    margin-top: -5vh;
-    margin-left: 7vw;
-    width: 31vw;
-  }
-
-  .smile_bear img:first-child {
-    width: 12vw;
-    margin-left: 7vw;
-  }
-
-  .smile_bear img {
-    width: 8vw;
-    margin-left: -2vw;
-  }
-
-  .smile_bear img:last-child {
-    margin-top: 16vh;
-  }
-
-  .demon {
-    top: 63vh;
+  .smile_triangle {
+    background-size: 55vw;
+    margin-top: -128vw;
+    margin-left: 54vw;
     width: 39vw;
+    height: 47vw;
   }
 
-  .smile_king {
-    margin-left: 48vw;
-    margin-top: -68vh;
-    background-size: 48vw;
-    width: 49vw;
+  .number_two {
+    font-size: 19vw;
+    -webkit-text-stroke: 0.6vw black;
   }
 
-  .smile_king_crown {
-    margin-left: 27vw;
-    width: 11vw;
+  .number_one {
+    font-size: 19vw;
+    -webkit-text-stroke: 0.6vw black;
+    margin-top: -17vw;
+    margin-left: -3vw;
+  }
+
+  .candy_wrapper p {
+    font-size: 10vw;
   }
 
   .street {
-    width: 42vw;
-    border: 0.3vh solid black;
-    margin-left: 41vw;
+    margin-top: 48vw;
+  }
+
+  .smile_green div {
+    margin-left: 1.1vw;
+  }
+
+  .oops p:first-child {
+    font-size: 22vw;
+    -webkit-text-stroke: 0.5vw black;
+  }
+
+  .oops p:lastt-child {
+    font-size: 22vw;
+    -webkit-text-stroke: 0.5vw black;
+  }
+
+  .smile_bear {
+    background-size: 38vw;
+    width: 36vw;
+    height: 36vw;
+    margin-top: 33vw;
+    margin-left: 1vw;
+ }
+
+ .smile_king {
+    margin-left: 51vw;
+    margin-top: -60vw;
+    width: 44vw;
+    background-size: 47vw;
+    height: 49vw;
+ }
+
+ .smile_king_crown {
+    transform: translateY(13vw);
+    width: 11vw;
+    margin-left: 24vw;
   }
 
   .sad {
-    width: 49vw;
-    left: 48vw;
-    top: 34vh;
+    width: 47vw;
+    left: 50vw;
+    top: 89vw;
     transform: rotate(-28deg);
   }
-  .info {
-    background-size: 146vw;
-    width: 105vw;
-    height: 41vh;
-    margin-left: 16vw;
-    margin-top: 1vh;
+
+ .smile_bear img {
+    width: 9vw;
+    margin-left: -4vw;
   }
 
-  .name_of_hospital {
-    margin-top: -75vh;
-    margin-left: 1vw;
+ .smile_bear img:first-child {
+    margin-left: 11vw;
+    width: 12vw;
   }
 
-  .name_of_hospital img {
-    width: 40vw;
-  }
-
-  .name_of_hospital img:nth-child(2) {
-    width: 40vw;
-  }
-
-  .name_of_hospital img:nth-child(3) {
-    width: 34vw;
-    left: 2.6vw;
-    top: 1.2vh;
-  }
-
-  .name_of_hospital img:nth-child(4) {
-    width: 34vw;
-    left: 2.6vw;
-    top: 1.2vh;
-  }
-
-  .name_of_hospital img:nth-child(5) {
-    width: 28vw;
-    left: 5.3vw;
-    top: 2.4vh;
-  }
-
-  .name_of_hospital p {
-    font-size: 1.4vh;
-    left: 12vw;
-    top: 4.4vh;
-  }
-}
-
-@media (max-width: 396px) {
-  .about_happines {
-    width: 114vw;
-    height: 34vh;
-  }
-
-  .about_happines p {
-    font-size: 3vh;
-  }
-
-  .about_treatment {
-    margin-top: 3vh;
-  }
-
-  .rectangle_smile_man {
-    left: 16vw;
-    top: 54vh;
-  }
-
-  .rectangle_smile_smile {
-    left: 25.9vw;
-    top: 60vh;
-  }
-
-  .moving_phrase_rectangle p {
-    font-size: 14vw;
-    margin-top: 1.6vh;
-    width: 197vw;
-  }
-
-}
-
-@media (max-width: 385px) {
-  .thread_pink {
-    width: 64vw;
-    left: -12vw;
-    top: 61vh;
-  }
-
-  .yes {
-    width: 30vw;
-    left: 3vw;
-    top: 28vh;
-  }
-
-  .no {
-    width: 30vw;
-    left: 3vw;
-    top: 28vh;
-  }
-
-  .rectangle_smile_smile {
-    top: 60vh;
-  }
-
-  .section_two {
-    margin-top: 88vh;
-  }
-
-  .about_treatment {
-    margin-top: 3vh;
-  }
 
   .section_three {
-    top: 191vh;
+    top: 383vw;
   }
 
-  .street {
-    margin-top: 32vh;
-  }
-
-  .smile_bear {
-    margin-top: -4vh;
-  }
-
-  .smile_bear img:last-child {
-    margin-top: 16vh;
-  }
-
-  .demon {
-    top: 67vh;
-  }
-
-  .smile_king {
-    margin-top: -69vh;
-  }
-
-  .sad {
-    top: 38vh;
+  .info {
+    margin-top: -12vw;
+    background-size: 167vw;
+    width: 131vw;
+    height: 83vw;
   }
 
   .name_of_hospital {
-    margin-left: 5vw;
-  }
-
-  .name_of_hospital img:nth-child(5) {
-    top: 2.2vh;
-  }
-
-  .name_of_hospital p {
-    top: 4.4vh;
-  }
-
-  .rectangle_smile_smile {
-    left: 25.2vw;
-    top: 62vh;
+    margin-top: -126vw;
   }
 }
 
 @media (max-width: 360px) {
-  .yes {
-    width: 30vw;
-    left: 6vw;
-    top: 21vh;
-  }
-
-  .no {
-    width: 30vw;
-    left: 6vw;
-    top: 21vh;
-  }
-
   .rectangle_smile_man {
-    top: 56vh;
+    left: 16vw;
+    top: 94vw;
+    width: 45vw;
   }
 
   .rectangle_smile_smile {
-    top: 63vh;
+    left: 28.9vw;
+    top: 111vw;
   }
 
   .moving_phrase_rectangle {
-    top: 123vw;
+    top: 124vw;
   }
 
   .moving_phrase_rectangle p {
-    margin-top: 1.1vh;
+    font-size: 12vw;
+    -webkit-text-stroke: 0.3vw #FBCBE1;
+    margin-top: 1.3vw;
   }
 
-  .button {
-    left: 27vw;
-    top: 83vh;
+  .coloring {
+    left: 34vw;
+    width: 77vw;
+    top: 32vw;
+    transform: rotate(-30deg);
   }
 
-  .heart_red {
-    margin-top: -46vh;
-  }
-
-  .smile_green {
-    margin-top: 25vh;
-  }
-
-  .wow {
-    transform: rotate(6deg);
-    margin-top: 6vh;
-  }
-
-  .oops p:last-child {
-    font-size: 13vh;
-    -webkit-text-stroke: 0.3vh black;
-    margin-top: -12vh;
-    margin-left: -2vw;
-  }
-
-  .oops p:first-child {
-    font-size: 13vh;
-    -webkit-text-stroke: 0.3vh black;
-  }
-
-  .oops {
-    transform: rotate(6deg);
-    margin-top: -9vh;
-    top: 41vh;
+  .coloring_after {
+    left: 34vw;
+    width: 77vw;
+    top: 32vw;
+    transform: rotate(-30deg);
   }
 
   .about_happines {
-    width: 99vw;
+    left: 40vw;
+    top: 67vw;
+    width: 116vw;
+    height: 67vw;
   }
 
-  .section_three {
-    top: 206vh;
+  .thread_pink {
+    width: 63vw;
+    left: -2vw;
+    top: 99vw;
   }
 
-  .smile_king {
-    margin-top: -71vh;
+  .yellow_smile {
+    top: 111vw;
   }
 
-  .name_of_hospital p {
-    font-size: 1.6vh;
-    left: 11.6vw;
-    top: 4.4vh;
+  .thread_red {
+    top: 20vw;
+    transform: rotate(6deg);
   }
-}
 
-@media (max-width: 340px) {
-   .moving_phrase_rectangle {
-      top: 130vw;
+  .button {
+    left: 34vw;
+    top: 3vw;
+    width: 18vw;
+  }
+
+  .cell {
+    top: 99vw;
   }
 
   .section_two {
-    margin-top: 85vh;
+    margin-top: 127vw;
+  }
+
+  .thorn p {
+    margin-top: 53vw;
+  }
+
+  .candy_wrapper {
+    margin-top: 25vw;
   }
 
   .section_three {
-    top: 199vh;
+    top: 336vw;
+  }
+
+  .smile_bear {
+    margin-top: 5vw;
+  }
+
+  .smile_king {
+    margin-left: 49vw;
+    margin-top: -90vw;
+    width: 47vw;
+    background-size: 47vw;
+  }
+
+  .street{
+      margin-left: 44vw;
+  }
+
+  .info {
+    margin-top: 16vw;
+    background-size: 167vw;
+    width: 131vw;
+    height: 83vw;
   }
 }
 
 @media (max-width: 320px) {
-  .moving_phrase_rectangle {
-    top: 137vw;
-  }
-
-  .coloring {
-    left: 33vw;
-    width: 80vw;
-    top: 25vh;
-  }
-
-
-  .coloring_after {
-    left: 33vw;
-    width: 80vw;
-    top: 25vh;
-  }
-
-  .name_of_hospital p {
-    top: 4.2vh;
-  }
-
-  .heart_red {
-    margin-top: -43vh;
+  .thorn p {
+    margin-top: 52vw;
   }
 }
