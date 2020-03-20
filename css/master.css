@@ -866,7 +866,7 @@ body {
   }
 
   .candy_wrapper {
-    margin-top: -19vw;
+    margin-top: -26vw;
     margin-left: 29vw;
   }
 
@@ -880,44 +880,77 @@ body {
     left: 70vw;
     top: 22vw;
     width: 16vw;
-    animation: move_angry 2s ease infinite;
+    animation: move_angry 0.5s ease infinite;
+    transition: 2s  all ease;
   }
 
   @keyframes move_angry {
     0% {
       transform: translate(-25%, 10%) rotate(-30deg);
     }
-    10% {
+    5% {
       transform: translate(-20%, 8%) rotate(-25deg);
     }
-    20% {
+    10% {
        transform: translate(-15%, 6%) rotate(-20deg);
     }
-    30% {
+    15% {
        transform: translate(-10%, 4%) rotate(-15deg);
     }
-    40% {
+    20% {
        transform: translate(-5%, 2%) rotate(-10deg);
     }
-    50% {
+    25% {
        transform: translate(0%, 0%) rotate(-5deg);
     }
-    60% {
+    30% {
        transform: translate(5%, 2%) rotate(0deg);
     }
-    70% {
+    35% {
        transform: translate(10%, 4%) rotate(5deg);
     }
-    80% {
+    40% {
        transform: translate(15%, 6%) rotate(10deg);
     }
-    90% {
+    45% {
        transform: translate(20%, 8%) rotate(15deg);
     }
-    100% {
+    50% {
        transform: translate(25%, 10%) rotate(20deg);
     }
+    55% {
+      transform: translate(20%, 8%) rotate(15deg);
+    }
+    60% {
+      transform: translate(15%, 6%) rotate(10deg);
+    }
+    65% {
+       transform: translate(10%, 4%) rotate(5deg);
+    }
+    70% {
+       transform: translate(5%, 2%) rotate(0deg);
+    }
+    75% {
+       transform: translate(0%, 0%) rotate(-5deg);
+    }
+    80% {
+       transform: translate(-5%, 2%) rotate(-10deg);
+    }
+    85% {
+       transform: translate(-10%, 4%) rotate(-15deg);
+    }
+    90% {
+       transform: translate(-15%, 6%) rotate(-20deg);
+    }
+    95% {
+       transform: translate(-20%, 8%) rotate(-25deg);
+    }
+    100% {
+       transform: translate(-25%, 10%) rotate(-30deg);
+    }
   }
+
+
 
 
   .section_three {
@@ -972,7 +1005,7 @@ body {
   }
 
   .name_of_hospital {
-    margin-top: -50vw;
+    margin-top: -57vw;
   }
 
   .name_of_hospital img {
@@ -998,6 +1031,7 @@ body {
   .name_of_hospital p {
     font-size: 2.2vw;
     top: 6.5vw;
+    left: 8vw;
     transform: rotate(15deg);
   }
 }

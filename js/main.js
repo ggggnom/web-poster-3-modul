@@ -153,7 +153,6 @@ fallAboutHappines
     let changeColorBacground = anime.timeline({
       targets: 'body',
       direction: 'alternate',
-      duration: 5000,
       autoplay: false
     })
 
@@ -161,31 +160,26 @@ fallAboutHappines
       .add({
         targets: 'body',
         backgroundColor: '#000033',
-        duration: 500
+        duration: 200
       })
       .add({
         targets: 'body',
         backgroundColor: '#003366',
-        duration: 500
+        duration: 200
       })
       .add({
         targets: 'body',
         backgroundColor: '#003399',
-        duration: 500
+        duration: 200
       })
       .add({
         targets: 'body',
         backgroundColor: '#3366CC',
-        duration: 500
+        duration: 200
       })
       .add({
         targets: 'body',
         backgroundColor: '#009999',
-        duration: 500
-      })
-      .add({
-        targets: 'body',
-        backgroundColor: '#33CCCC',
         duration: 500
       })
       .add({
@@ -236,10 +230,6 @@ function fixCells() {
   let cell = document.getElementByClassName('cell')
 }
 
-function scrollMovingFras() {
- document.getElementById('666').scrollLeft = anime.random(0, 400)
- setInterval(randomScroll, 1000);
-}
 
 let btnImg = document.querySelector('.coloring')
 btnImg.onclick = function(e) {
@@ -289,7 +279,45 @@ changeBlueTriangle.onclick = function(e) {
 }
 
 
+let elem = document.querySelector('#patchik')
+console.log(elem.getBoundingClientRect())
 
+
+let controller = new ScrollMagic.Controller()
+
+ let fixationOfPatch = document.querySelector('#patchik')
+ let patchAnimation = anime({
+   targets: '#patchik',
+   position: 'fixed',
+   loop: true,
+   autoplay: false
+ })
+ new ScrollMagic.Scene({
+  triggerElement: fixationOfPatch,
+  triggerHook: 0.5,
+  offset: 1500
+})
+.addTo(controller)
+.on('enter', () => fixationOfPatch.play())
+
+
+
+
+
+
+function addHeart(amount) {
+  let count = 25
+  while (amount < count) {
+
+    let newImg = document.createElement('img')
+    newImg.classList.add('heart_pink')
+    heartWrapper.append(newImg)
+    count +=1
+  }
+}
+
+let heartRed = document.getElementByClassName(".heart_red")
+heartRed .onclick = addHeart.play
 
 /*let fallFraseAboutHappiness = anime({
   targets: '.about_happines_phrase_odd',
