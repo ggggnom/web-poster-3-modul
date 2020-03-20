@@ -289,16 +289,6 @@ changeBlueTriangle.onclick = function(e) {
 }
 
 
-/*let moveAngry = anime({
-  targets: '.angry',
-  translateX: ['-20vw', '5vw'],
-  rotate: [0, 180],
-  duration: 1000,
-  loop: true,
-  direction: 'alternate'
-})
-*/
-
 
 
 /*let fallFraseAboutHappiness = anime({
