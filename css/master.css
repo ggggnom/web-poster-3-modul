@@ -7,8 +7,12 @@ body {
   font-family: 'Gotham', 'bodoni', sans-serif;
   overflow-x: hidden;
   background-color: black;
+  background-image: url(../img/cell.svg);
+  background-size: 100vw;
   transition: background-color 4s ease;
 }
+
+
 .background {
   position: fixed;
   width: 100vw;
@@ -17,6 +21,10 @@ body {
   z-index: -4;
   top: 0;
   left: 0;
+}
+
+.is-fixed {
+  position: fixed;
 }
 
 .rectangle_smile_man {
@@ -218,7 +226,6 @@ body {
   transform: rotate(-11deg);
   left: 24vw ;
   top: 38vw;
-  display: none;
 }
 .oops p:first-child {
   font-size: 14vw;
@@ -229,7 +236,7 @@ body {
 .oops p:last-child {
   font-size: 14vw;
   color: #89D5F6;
-  -webkit-text-stroke: 0.3 black;
+  -webkit-text-stroke: 0.3vw black;
   margin-top: -12vw;
   margin-left: -1.5vw;
 }
@@ -281,6 +288,13 @@ body {
   width: 10vw;
   margin-top: -7vw;
   margin-left: 20vw;
+}
+
+.heart_red_div {
+  background-image: url(img/heart_red.svg);
+  width: 10vw;
+  background-size: 8vw;
+  background-repeat: no-repeat;
 }
 
 .smile_green {
@@ -342,6 +356,8 @@ body {
   background-size: 30vw;
   margin-left: 63vw;
   margin-top: -48vw;
+  z-index: 3;
+  position: relative;
 }
 
 .smile_triangle_eye {
@@ -514,13 +530,15 @@ body {
   position: absolute;
   top: 19vw;
   left: 24vw;
+  width: 20vw;
   transform: rotate(44deg);
 }
 
 .info_facebook {
   position: absolute;
   top: 22vw;
-  left: 42vw;
+  width: 8vw;
+  left: 49vw;
   transform: rotate(-21deg)
 }
 .info_share {
@@ -534,6 +552,8 @@ body {
   position: relative;
   margin-top: -38vw;
   margin-left: 13vw;
+  width: 30vw;
+  height: 16vw;
 }
 
 .name_of_hospital img {
@@ -554,7 +574,8 @@ body {
 }
 
 .name_of_hospital img:nth-child(even) {
-  display: none;
+
+  animation: blinking_one 2s ease infinite;
 }
 
 .name_of_hospital img:nth-child(3) {
@@ -562,7 +583,7 @@ body {
   top: 1.6vw;
 }
 
-.name_of_hospital img:nth-child(4) {
+#oval_two {
   left: 1.8vw;
   top: 1.64vw;
 }
@@ -576,149 +597,494 @@ body {
   top: 2.6vw;
 }
 
-#inst:hover {
-  fill: red;
-}
 
 @media (max-width: 5120px) {
   .thread_pink {
     top: 28vw;
   }
+
   .about_memorise {
     left: -15vw;
     top: -6vw;
   }
+
   .yes {
     left: 7vw;
   }
+
   .no {
     left: 7vw;
   }
+
   .moving_phrase_rectangle {
     top: 35vw
   }
+
   .coloring {
     left: 53vw;
     top: 6vw;
     width: 36vw;
   }
+
   .coloring_after {
     left: 53vw;
     top: 6vw;
     width: 36vw;
   }
+
   .button {
     left: 73vw;
     top: 39vw;
   }
+
   .thread_red {
     left: 88vw;
   }
+
   .about_happines p {
     font-size: 2.5vw;
   }
+
   .section_two {
     top: 64vw;
   }
+
   .wow {
     margin-top: -17vw;
   }
+
   .thorn {
     margin-top: -30vw;
   }
+
+  .oops {
+    top: 31vw;
+  }
+
   .wow p:last-child {
     margin-top: -11vw;
     margin-left: -1.3vw;
   }
+
   .heart_red {
     margin-top: -30vw;
   }
+
   .smile_green {
     margin-top: 6vw;
     margin-left: 1vw;
   }
+
   .smile_green {
-    height: 26vh;
+    height: 15vw;
     margin-top: 11vw;
   }
+
   .thorn p {
     font-size: 2.4vw;
     margin-top: 17vw;
   }
+
   .section_three {
     top: 125vw;
+  }
+  .sad {
+    width: 19vw;
+    left: 63vw;
+    top: 19.5vw;
+  }
+
+  @keyframes moveCrown {
+    0% {
+      transform: translateY(11vw);
+    }
+    50% {
+      transform: translateY(8vw);
+    }
+    100% {
+      transform: translateY(11vw);
+    }
   }
   .smile_bear {
     height: 19vw;
     margin-top: 2vw;
   }
+
   .demon {
     width: 22vw;
     top: 37vw;
+    animation: movingDemon 4s ease infinite;
   }
+
+  @keyframes movingDemon {
+    0% {
+      transform: translateX(0vw);
+    }
+    20% {
+      transform: translateX(120vw);
+    }
+    22% {
+      transform: translateY(120vw);
+    }
+    23% {
+      transform: translateX(-50vw);
+    }
+    24% {
+      transform: translateY(0vw);
+    }
+    40% {
+      transform: translateX(0vw);
+    }
+    50% {
+      transform: translateX(0vw);
+    }
+    60% {
+      transform: translateX(120vw);
+    }
+    61% {
+      transform: translateY(120vw);
+    }
+    62% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateY(0vw);
+    }
+  }
+
   .street {
     margin-left: 47vw;
   }
+
   .smile_king {
     background-size: 19vw;
     margin-left: 55vw;
     margin-top: -41vw;
   }
+
   .smile_king_crown {
     transform: translateY(9vw);
     margin-left: 19vw;
+    animation: moveCrown 2s ease infinite;
+    transition: transform 4s ease;
   }
+
   .info {
     margin-left: 20vw;
     margin-top: -12vw;
   }
+
   .name_of_hospital img {
     width: 24vw;
   }
+
   .name_of_hospital img:nth-child(3) {
     left: 1.8vw;
     top: 1.2vw;
     width: 21vw;
   }
-  .name_of_hospital img:nth-child(4) {
+
+  #oval_two {
     left: 1.8vw;
     top: 1.2vw;
     width: 21vw;
   }
+
   .name_of_hospital img:nth-child(5) {
     left: 3.2vw;
     top: 2.3vw;
     width: 18vw;
   }
-  .name_of_hospital img:nth-child(6) {
+
+  #oval_three {
     left: 3.2vw;
     top: 2.3vw;
     width: 18vw;
   }
+
   .name_of_hospital p {
     font-size: 2vw;
     left: 6vw;
     top: 5vw;
   }
+
   .name_of_hospital {
     margin-top: -46vw;
   }
+
   .smile_triangle {
     height: 25vw;
     margin-top: -44vw;
   }
+
   .candy_wrapper {
     margin-top: -14vw;
  }
+
+ .info_vk {
+   width: 10vw;
+   animation: movingOfVk 3s ease infinite;
+ }
+
+ @keyframes movingOfVk {
+   0% {
+     transform: translate(-50%, 10%) rotate(-30deg);
+   }
+   5% {
+     transform: translate(-40%, 8%) rotate(-25deg);
+   }
+   10% {
+      transform: translate(-30%, 6%) rotate(-20deg);
+   }
+   15% {
+      transform: translate(-20%, 4%) rotate(-15deg);
+   }
+   20% {
+      transform: translate(-10%, 2%) rotate(-10deg);
+   }
+   25% {
+      transform: translate(0%, 0%) rotate(-5deg);
+   }
+   30% {
+      transform: translate(10%, 2%) rotate(0deg);
+   }
+   35% {
+      transform: translate(20%, 4%) rotate(5deg);
+   }
+   40% {
+      transform: translate(30%, 6%) rotate(10deg);
+   }
+   45% {
+      transform: translate(30%, 8%) rotate(15deg);
+   }
+   50% {
+      transform: translate(50%, 10%) rotate(20deg);
+   }
+   55% {
+     transform: translate(40%, 8%) rotate(15deg);
+   }
+   60% {
+     transform: translate(30%, 6%) rotate(10deg);
+   }
+   65% {
+      transform: translate(20%, 4%) rotate(5deg);
+   }
+   70% {
+      transform: translate(10%, 2%) rotate(0deg);
+   }
+   75% {
+      transform: translate(0%, 0%) rotate(-5deg);
+   }
+   80% {
+      transform: translate(-10%, 2%) rotate(-10deg);
+   }
+   85% {
+      transform: translate(-20%, 4%) rotate(-15deg);
+   }
+   90% {
+      transform: translate(-30%, 6%) rotate(-20deg);
+   }
+   95% {
+      transform: translate(-40%, 8%) rotate(-25deg);
+   }
+   100% {
+      transform: translate(-50%, 10%) rotate(-30deg);
+   }
+ }
+
+ .info_instagram {
+   animation: moveInst 5s ease infinite;
+   transition: transform 2s ease;
+ }
+
+ @keyframes moveInst {
+   0%{
+     transform: translate(0%, 0%)  rotate(-27deg);
+   }
+   10%{
+     transform: translate(20%, 5%)  rotate(-15deg);
+   }
+   20%{
+     transform: translate(40%, 10%)  rotate(0deg);
+   }
+   30%{
+     transform: translate(60%, 10%)  rotate(15deg);
+   }
+   40%{
+     transform: translate(80%, 5%)  rotate(27deg);
+   }
+   50%{
+     transform: translate(90%, 0%)  rotate(40deg);
+   }
+   60%{
+     transform: translate(80%, 5%)  rotate(27deg);
+   }
+   70%{
+     transform: translate(60%, 10%)  rotate(15deg);
+   }
+   80%{
+     transform: translate(40%, 10%)  rotate(0deg);
+   }
+   90%{
+     transform: translate(20%, 5%)  rotate(-15deg);
+   }
+   100%{
+     transform: translate(0%, 0%)  rotate(-27deg);
+   }
+ }
+
+ .info_facebook {
+   width: 8vw;
+   animation: moveFacebook 3s ease infinite;
+ }
+
+ @keyframes moveFacebook {
+   0%{
+     transform: translate(0%, 0%)  rotate(-27deg);
+   }
+   10%{
+     transform: translate(20%, 5%)  rotate(-15deg);
+   }
+   20%{
+     transform: translate(40%, 10%)  rotate(0deg);
+   }
+   30%{
+     transform: translate(60%, 10%)  rotate(15deg);
+   }
+   40%{
+     transform: translate(80%, 5%)  rotate(27deg);
+   }
+   50%{
+     transform: translate(90%, 0%)  rotate(40deg);
+   }
+   60%{
+     transform: translate(80%, 5%)  rotate(27deg);
+   }
+   70%{
+     transform: translate(60%, 10%)  rotate(15deg);
+   }
+   80%{
+     transform: translate(40%, 10%)  rotate(0deg);
+   }
+   90%{
+     transform: translate(20%, 5%)  rotate(-15deg);
+   }
+   100%{
+     transform: translate(0%, 0%)  rotate(-27deg);
+   }
+ }
+
+
+ .angry {
+   animation: move_angry 0.5s ease infinite;
+   transition: 2s  all ease;
+   width: 21vw;
+   margin-top: 2vw;
+ }
+
+ .sun {
+    left: 1vw;
+    width: 21vw;
+    top: 43vw;
+    animation: movingSun 2s ease infinite;
+ }
+
+ @keyframes movingSun {
+   0% {
+     transform: rotate(0deg)
+   }
+   20% {
+     transform: rotate(160deg)
+   }
+   60% {
+     transform: rotate(240deg)
+   }
+   80% {
+     transform: rotate(360deg)
+   }
+   100% {
+     transform: rotate(0deg)
+   }
+ }
+
+ @keyframes move_angry {
+   0% {
+     transform: translate(-25%, 10%) rotate(-30deg);
+   }
+   5% {
+     transform: translate(-20%, 8%) rotate(-25deg);
+   }
+   10% {
+      transform: translate(-15%, 6%) rotate(-20deg);
+   }
+   15% {
+      transform: translate(-10%, 4%) rotate(-15deg);
+   }
+   20% {
+      transform: translate(-5%, 2%) rotate(-10deg);
+   }
+   25% {
+      transform: translate(0%, 0%) rotate(-5deg);
+   }
+   30% {
+      transform: translate(5%, 2%) rotate(0deg);
+   }
+   35% {
+      transform: translate(10%, 4%) rotate(5deg);
+   }
+   40% {
+      transform: translate(15%, 6%) rotate(10deg);
+   }
+   45% {
+      transform: translate(20%, 8%) rotate(15deg);
+   }
+   50% {
+      transform: translate(25%, 10%) rotate(20deg);
+   }
+   55% {
+     transform: translate(20%, 8%) rotate(15deg);
+   }
+   60% {
+     transform: translate(15%, 6%) rotate(10deg);
+   }
+   65% {
+      transform: translate(10%, 4%) rotate(5deg);
+   }
+   70% {
+      transform: translate(5%, 2%) rotate(0deg);
+   }
+   75% {
+      transform: translate(0%, 0%) rotate(-5deg);
+   }
+   80% {
+      transform: translate(-5%, 2%) rotate(-10deg);
+   }
+   85% {
+      transform: translate(-10%, 4%) rotate(-15deg);
+   }
+   90% {
+      transform: translate(-15%, 6%) rotate(-20deg);
+   }
+   95% {
+      transform: translate(-20%, 8%) rotate(-25deg);
+   }
+   100% {
+      transform: translate(-25%, 10%) rotate(-30deg);
+   }
+ }
+
+
 }
 
 @media (max-width: 1920px) {
   .thread_pink {
     left: -2vw;
   }
+
   .yes {
     left: 6vw;
   }
+
   .no {
     left: 6vw;
   }
@@ -773,7 +1139,7 @@ body {
   }
 
   .yellow_smile {
-    top: 28vw;
+    top: 34vw;
   }
 
   .button {
@@ -880,76 +1246,7 @@ body {
     left: 70vw;
     top: 22vw;
     width: 16vw;
-    animation: move_angry 0.5s ease infinite;
-    transition: 2s  all ease;
   }
-
-  @keyframes move_angry {
-    0% {
-      transform: translate(-25%, 10%) rotate(-30deg);
-    }
-    5% {
-      transform: translate(-20%, 8%) rotate(-25deg);
-    }
-    10% {
-       transform: translate(-15%, 6%) rotate(-20deg);
-    }
-    15% {
-       transform: translate(-10%, 4%) rotate(-15deg);
-    }
-    20% {
-       transform: translate(-5%, 2%) rotate(-10deg);
-    }
-    25% {
-       transform: translate(0%, 0%) rotate(-5deg);
-    }
-    30% {
-       transform: translate(5%, 2%) rotate(0deg);
-    }
-    35% {
-       transform: translate(10%, 4%) rotate(5deg);
-    }
-    40% {
-       transform: translate(15%, 6%) rotate(10deg);
-    }
-    45% {
-       transform: translate(20%, 8%) rotate(15deg);
-    }
-    50% {
-       transform: translate(25%, 10%) rotate(20deg);
-    }
-    55% {
-      transform: translate(20%, 8%) rotate(15deg);
-    }
-    60% {
-      transform: translate(15%, 6%) rotate(10deg);
-    }
-    65% {
-       transform: translate(10%, 4%) rotate(5deg);
-    }
-    70% {
-       transform: translate(5%, 2%) rotate(0deg);
-    }
-    75% {
-       transform: translate(0%, 0%) rotate(-5deg);
-    }
-    80% {
-       transform: translate(-5%, 2%) rotate(-10deg);
-    }
-    85% {
-       transform: translate(-10%, 4%) rotate(-15deg);
-    }
-    90% {
-       transform: translate(-15%, 6%) rotate(-20deg);
-    }
-    95% {
-       transform: translate(-20%, 8%) rotate(-25deg);
-    }
-    100% {
-       transform: translate(-25%, 10%) rotate(-30deg);
-    }
-  }
-
 
 
 
@@ -1022,7 +1319,19 @@ body {
     width: 25vw;
   }
 
+  #oval_two {
+    left: 1.5vw;
+    top: 1.4vw;
+    width: 25vw;
+  }
+
   .name_of_hospital img:nth-child(5) {
+    left: 3.0vw;
+    top: 2.8vw;
+    width: 22vw;
+  }
+
+  #oval_three {
     left: 3.0vw;
     top: 2.8vw;
     width: 22vw;
@@ -1069,7 +1378,7 @@ body {
   }
 
   .oops {
-    top: 0vw;
+    top: 25vw;
   }
 
   .thorn p {
@@ -1240,7 +1549,6 @@ body {
 
 @media (max-width: 1570px) {
 
-} {
   .cell {
     top: 19vw;
   }
@@ -1262,11 +1570,11 @@ body {
   }
 
   .oops{
-    margin-top: -18vw;
+    top: 25vw;
   }
 
   .smile_green_eye {
-    width: 7vw;
+    width: 8vw;
   }
 
   .section_three {
@@ -1277,7 +1585,7 @@ body {
     top: 3vw;
   }
 
-  .name_of_hospital img:nth-child(6) {
+  #oval_three {
     top: 3vw;
   }
 
@@ -1327,10 +1635,6 @@ body {
   .wow {
     margin-top: -18vw;
 
-  }
-
-  .oops{
-    margin-top: -18vw;
   }
 
   .section_three {
@@ -1394,6 +1698,7 @@ body {
 @media (max-width: 1340px) {
   .smile_green {
     background-size: 20vw;
+    height: 17vw;
   }
 
   .candy_wrapper {
@@ -1449,7 +1754,7 @@ body {
     top: 1.2vw;
   }
 
-  .name_of_hospital img:nth-child(4) {
+  #oval_two {
     top: 1.2vw;
   }
 
@@ -1457,7 +1762,7 @@ body {
     top: 2.4vw;
   }
 
-  .name_of_hospital img:nth-child(6) {
+  #oval_three {
     top: 2.4vw;
   }
 
@@ -1523,7 +1828,7 @@ body {
   }
 
   .no {
-    width: 24vw;
+    width: 25.5vw;
     left: 2vw;
     top: 36vw;
   }
@@ -1541,11 +1846,23 @@ body {
     top: 77vw;
 }
 
+.demon {
+    top: 61vw;
+    left: 4vw;
+    width: 31vw;
+}
+
+.sun {
+  top: 70vw;
+  left: 4vw;
+  width: 31vw;
+}
+
 .moving_phrase_rectangle p {
     font-size: 12vw;
     -webkit-text-stroke: 0.4vw #FBCBE1;
-    width: 120vw;
-    margin-left: 2vw;
+    width: 232vw;
+    margin-left: -60vw;
     margin-top: 3vw;
   }
 
@@ -1651,6 +1968,21 @@ body {
     margin-left: 13vw;
   }
 
+  .oops {
+    transform: rotate(6deg);
+    top: 39vw;
+    left: 16vw;
+  }
+
+  .oops p:first-child {
+    font-size: 19vw;
+  }
+
+  .oops p:last-child {
+    margin-top: -17vw;
+    font-size: 19vw;
+  }
+
   .heart_red {
     width: 16vw;
     margin-top: -65vw;
@@ -1665,7 +1997,7 @@ body {
 
   .thorn {
       width: 69vw;
-      height: 63vh;
+      height: 84vw;
       background-size: 46vw;
       margin-top: -57vw;
       margin-left: 37vw;
@@ -1677,11 +2009,11 @@ body {
       margin-top: 39vw;
    }
    .smile_green {
-    width: 20vw;
+    width: 22vw;
     height: 31vw;
     background-size: 26vw;
-    margin-top: 19vw;
-    margin-left: 9vw;
+    margin-top: 23vw;
+    margin-left: 6vw;
   }
 
   .smile_green_eye {
@@ -1690,13 +2022,13 @@ body {
     margin-top: 7vh;
   }
   .smile_green div {
-    margin-left: 0.3vw;
+    margin-left: 0.8vw;
     margin-top: 7vw;
   }
 
   .smile_green_eye div {
-    margin-top: 3vw;
-    margin-left: 2vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
   }
 
   .smile_green_eyes div:first-child {
@@ -1705,13 +2037,19 @@ body {
 
   .smile_triangle {
     background-size: 41vw;
-    margin-top: -80vw;
+    margin-top: -86vw;
     height: 40vw;
+  }
+
+  .angry {
+    width: 25vw;
+    left: 60vw;
+    top: 19vw;
   }
 
   .candy_wrapper {
     background-size: 62vw;
-    margin-top: -7vw;
+    margin-top: -11vw;
     height: 46vw;
   }
 
@@ -1721,7 +2059,7 @@ body {
 
   /*THIRD SECTION*/
   .section_three {
-    top: 199vh;
+    top: 268vw;
   }
 
   .number {
@@ -1761,7 +2099,7 @@ body {
 
   .smile_bear img:first-child {
     width: 10vw;
-    margin-left: 5vw;
+    margin-left: 7vw;
   }
 
   .smile_bear img {
@@ -1788,8 +2126,8 @@ body {
 
   .sad {
     width: 32vw;
-    left: 62vw;
-    top: 36vw;
+    left: 61.5vw;
+    top: 39vw;
     transform: rotate(-28deg);
   }
 
@@ -1802,24 +2140,21 @@ body {
   }
 
   .info_vk {
-    top: 21vh;
-    left: 24vw;
+    top: 25vw;
+    left: 27vw;
+    width: 15vw;
   }
 
   .info_facebook {
-    top: 27vh;
+    top: 29vw;
     left: 53vw;
+    width: 13vw;
   }
 
   .info_instagram {
-    left: 42vw;
-    top: 36vh;
-  }
-
-  .info_share {
-    width: 11vw;
-    top: 23vh;
-    left: 68vw;
+    left: 35vw;
+    top: 44vw;
+    width: 7vw;
   }
 
   .name_of_hospital {
@@ -1846,7 +2181,7 @@ body {
     top: 1.9vw;
   }
 
-  .name_of_hospital img:nth-child(4) {
+  #oval_two {
     width: 32vw;
     left: 2.6vw;
     top: 1.9vw;
@@ -1857,7 +2192,7 @@ body {
     left: 4.8vw;
     top: 3.7vw;
   }
-  .name_of_hospital img:nth-child(6) {
+  #oval_three {
     width: 27vw;
     left: 4.8vw;
     top: 3.7vw;
@@ -1870,11 +2205,11 @@ body {
   }
 
   .thorn {
-    margin-top: -71vw;
+    margin-top: -66vw;
   }
 
   .thorn p {
-    margin-top: 48vw;
+    margin-top: 39vw;
   }
 
   .smile_triangle {
@@ -1888,6 +2223,28 @@ body {
   .street {
     margin-top: 39vw;
   }
+
+  .candy_wrapper {
+    margin-top: -1vw;
+  }
+
+  .sun {
+    top: 61vw;
+    left: 1vw;
+  }
+
+  .angry {
+    top: 7vw;
+  }
+
+  .sad {
+    top: 35vw;
+  }
+
+  .smile_green div {
+    margin-left: 1.1vw;
+  }
+
 }
 
 
@@ -1917,7 +2274,7 @@ body {
   }
 
   .thorn p {
-    margin-top: 43vw;
+    margin-top: 39vw;
   }
 
   .coloring {
@@ -1925,9 +2282,7 @@ body {
     width: 65vw;
     top: 14vw;
   }
-  .smile_green div {
-    margin-left: 0.1vw;
-  }
+
 
   .coloring_after {
     left: 40vw;
@@ -2008,11 +2363,11 @@ body {
   }
 
   .thorn {
-    margin-top: -75vw;
+    margin-top: -62vw;
   }
 
   .thorn p {
-    margin-top: 53vw;
+    margin-top: 39vw;
   }
 
   .street {
@@ -2066,7 +2421,7 @@ body {
   .moving_phrase_rectangle p {
     font-size: 13vw;
     margin-top: 2.1vw;
-    width: 167vw;
+    width: 202vw;
   }
 
   .smile_green {
@@ -2078,7 +2433,7 @@ body {
   }
 
   .thorn p {
-    margin-top: 59vw;
+    margin-top: 38vw;
     margin-left: 8vw;
   }
 
@@ -2088,14 +2443,15 @@ body {
     top: 2vw;
   }
 
-  .name_of_hospital img:nth-child(4) {
+  #oval_two {
     top: 2vw;
   }
 
   .name_of_hospital img:nth-child(5) {
     top: 3.9vw;
   }
-  .name_of_hospital img:nth-child(6) {
+
+  #oval_three {
     top: 3.9vw;
   }
 
@@ -2133,9 +2489,9 @@ body {
 
   .about_memorise {
     width: 67vw;
-    left: -6vw;
-    top: 5vh;
-    height: 3.7vh;
+    left: -8vw;
+    top: 13vw;
+    height: 6.7vw;
   }
 
   .about_memorise p{
@@ -2201,16 +2557,16 @@ body {
   }
 
   .button {
-    left: 3vw;
-    top: 20vw;
-    width: 26vw;
+    left: 38vw;
+    top: 3vw;
+    width: 21vw;
   }
 
   .thread_red {
     width: 32vw;
     z-index: -1;
     left: 75vw;
-    top: 32vw;
+    top: -4vw;
     transform: rotate(8deg);
   }
 
@@ -2238,19 +2594,26 @@ body {
 
   .wow p:first-child {
     font-size: 20vw;
-    -webkit-text-stroke: 0.4vw black
+    -webkit-text-stroke: 0.4vw black;
   }
 
   .wow p:last-child {
     margin-top: -18vw;
     margin-left: -3vw;
     font-size: 20vw;
-    -webkit-text-stroke: 0.4vw black
+    -webkit-text-stroke: 0.4vw black;
   }
 
   .oops {
-    margin-top: -17vw;
-    transform: rotate(6deg)
+    top: 74vw;
+    transform: rotate(6deg);
+  }
+
+  .oops p:last-child {
+    margin-top: -20vw;
+    margin-left: -3vw;
+    font-size: 23vw;
+    -webkit-text-stroke: 0.4vw black;
   }
 
   .heart_red {
@@ -2266,13 +2629,13 @@ body {
   }
 
   .thorn {
-    margin-top: -98vw;
+    margin-top: -73vw;
     background-size: 53vw;
     margin-left: 37vw;
   }
 
   .thorn p {
-    margin-top: 64vw;
+    margin-top: 38vw;
     margin-left: 8vw;
     font-size: 3.5vw
   }
@@ -2281,8 +2644,12 @@ body {
     width: 29vw;
     height: 31vw;
     background-size: 35vw;
-    margin-top: 49vw;
+    margin-top: 85vw;
     margin-left: 4vw;
+  }
+
+  .smile_green div {
+    margin-left: 1.8vw;
   }
 
   .smile_green_eye {
@@ -2293,22 +2660,34 @@ body {
   }
 
   .smile_green_eye div {
-    margin-left: 4vw;
+    margin-left: 1vw;
   }
 
   .candy_wrapper {
     background-size: 75vw;
     width: 75vw;
-    margin-top: 6vw;
-    margin-left: 17vw;
+    margin-top: -4vw;
+    margin-left: 22vw;
     height: 55vw;
+  }
+
+  .sun {
+    top: 129vw;
+    left: 0vw;
+    width: 42vw;
+  }
+
+  .demon {
+    top: 113vw;
+    left: -1vw;
+    width: 40vw;
   }
 
   .smile_triangle {
     background-size: 55vw;
     margin-top: -128vw;
     margin-left: 54vw;
-    width: 39vw;
+    width: 41vw;
     height: 47vw;
   }
 
@@ -2330,10 +2709,6 @@ body {
 
   .street {
     margin-top: 48vw;
-  }
-
-  .smile_green div {
-    margin-left: 1.1vw;
   }
 
   .oops p:first-child {
@@ -2385,6 +2760,11 @@ body {
     width: 12vw;
   }
 
+  .angry {
+    top: 44vw;
+    width: 34vw;
+  }
+
 
   .section_three {
     top: 383vw;
@@ -2397,50 +2777,72 @@ body {
     height: 83vw;
   }
 
+  .info_vk {
+    top: 40vw;
+    left: 30vw;
+    width: 22vw;
+  }
+
+  .info_facebook {
+    top: 35vw;
+    left: 63vw;
+    width: 15vw;
+  }
+
+  .info_instagram {
+    top: 67vw;
+    left: 46vw;
+    width: 10vw;
+  }
+
   .name_of_hospital {
     margin-top: -126vw;
   }
 }
 
 @media (max-width: 360px) {
+  .no {
+    width: 36.5vw;
+  }
   .rectangle_smile_man {
     left: 16vw;
-    top: 94vw;
+    top: 108vw;
     width: 45vw;
   }
 
   .rectangle_smile_smile {
     left: 28.9vw;
-    top: 111vw;
+    top: 126vw;
   }
 
   .moving_phrase_rectangle {
-    top: 124vw;
+    top: 137vw;
   }
 
   .moving_phrase_rectangle p {
     font-size: 12vw;
     -webkit-text-stroke: 0.3vw #FBCBE1;
     margin-top: 1.3vw;
+    width: 212vw;
   }
 
   .coloring {
-    left: 34vw;
+    left: 39vw;
     width: 77vw;
-    top: 32vw;
+    top: 39vw;
     transform: rotate(-30deg);
   }
 
   .coloring_after {
-    left: 34vw;
+    left: 39vw;
     width: 77vw;
-    top: 32vw;
+    top: 39vw;
     transform: rotate(-30deg);
   }
 
   .about_happines {
     left: 40vw;
-    top: 67vw;
+    top: 87vw;
     width: 116vw;
     height: 67vw;
   }
@@ -2448,7 +2850,7 @@ body {
   .thread_pink {
     width: 63vw;
     left: -2vw;
-    top: 99vw;
+    top: 122vw;
   }
 
   .yellow_smile {
@@ -2456,7 +2858,7 @@ body {
   }
 
   .thread_red {
-    top: 20vw;
+    top: -3vw;
     transform: rotate(6deg);
   }
 
@@ -2474,16 +2876,33 @@ body {
     margin-top: 127vw;
   }
 
+  .sun {
+    top: 119vw;
+  }
+
   .thorn p {
-    margin-top: 53vw;
+    margin-top: 39vw;
   }
 
   .candy_wrapper {
-    margin-top: 25vw;
+    margin-top: 7vw;
+  }
+
+  .angry {
+    top: 34vw;
   }
 
   .section_three {
     top: 336vw;
+  }
+
+  .demon {
+    top: 85vw;
+  }
+
+  .sad {
+    left: 49vw;
+    top: 31vw;
   }
 
   .smile_bear {
@@ -2495,6 +2914,10 @@ body {
     margin-top: -90vw;
     width: 47vw;
     background-size: 47vw;
+  }
+
+  .smile_green {
+    margin-top: 72vw;
   }
 
   .street{
@@ -2511,6 +2934,7 @@ body {
 
 @media (max-width: 320px) {
   .thorn p {
-    margin-top: 52vw;
+    margin-top: 39vw;
+    margin-left: 5vw;
   }
 }

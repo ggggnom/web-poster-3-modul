@@ -23,17 +23,20 @@ var fallYes = anime({
 
 var fallAboutMemorise = anime.timeline({
   targets: '.about_memorise',
-  duration: 100,
-  rotate: 54,
   easing: 'easeInOutCubic',
   autoplay: true
 })
 
 fallAboutMemorise
   .add({
-    delay: 700,
-    duration: 350,
-    translateY: ['-150vh', 0]
+    targets: '.about_memorise',
+    duration: 100,
+    rotate: 54,
+  })
+  .add({
+    translateY: ['-200vh', 0],
+    targets: '.about_memorise',
+    duration: 350
   })
 
 var fallMovingFrase = anime.timeline({
@@ -167,11 +170,7 @@ fallAboutHappines
         backgroundColor: '#003366',
         duration: 200
       })
-      .add({
-        targets: 'body',
-        backgroundColor: '#003399',
-        duration: 200
-      })
+
       .add({
         targets: 'body',
         backgroundColor: '#3366CC',
@@ -187,18 +186,15 @@ fallAboutHappines
         backgroundColor: '#33CCCC',
         duration: 500
       })
+      .add({
+        targets: 'body',
+        backgroundColor: '#99FFFF',
+        duration: 3000
+      })
 
     let yellowSmile = document.getElementById("yo")
     yellowSmile.onclick = changeColorBacground.play
 
-    let pullCandyWrapper = anime({
-      targets: '.candy_wrapper',
-      direction: 'alternate',
-      width: '200%',
-      autoplay: false
-    })
-    let candyWrapper = document.getElementById("candy")
-    candyWrapper.onclick = pullCandyWrapper.play
 
 
     let scrollRight = anime({
@@ -221,10 +217,6 @@ fallAboutHappines
     })
     let patch = document.getElementById("patchik")
     patch.onclick = runPatch.play
-
-function changeImageGreenSmile() {
-  let greenSmile = document.getElementByClassName('smile_green')
-}
 
 function fixCells() {
   let cell = document.getElementByClassName('cell')
@@ -261,28 +253,375 @@ let smileRectangleSmile = anime({
   duration: 1000
 })
 
+let blinkingOne = anime.timeline ({
+  targets: '#oval_one',
+  autoplay: true,
+  loop: true,
+  duration: 2000,
+  direction: 'alternate'
+})
+
+blinkingOne
+  .add({
+    targets: '#oval_one',
+    duration: 500,
+    opacity: 0,
+  })
+  .add({
+    targets: '#oval_one',
+    duration: 500,
+    opacity: 1,
+  })
+  .add({
+    targets: '#oval_one',
+    duration: 500,
+    opacity: 0,
+  })
+  .add({
+    targets: '#oval_one',
+    duration: 500,
+    opacity: 1,
+  })
+  .add({
+    targets: '#oval_one',
+    duration: 500,
+    opacity: 0,
+  })
+
+  let blinkingTwo = anime.timeline ({
+    targets: '#oval_two',
+    autoplay: true,
+    loop: true,
+    delay: 200,
+    direction: 'alternate'
+  })
+
+  blinkingTwo
+    .add({
+      targets: '#oval_two',
+      duration: 500,
+      opacity: 0,
+    })
+    .add({
+      targets: '#oval_two',
+      duration: 500,
+      opacity: 1,
+    })
+    .add({
+      targets: '#oval_two',
+      duration: 500,
+      opacity: 0,
+    })
+    .add({
+      targets: '#oval_two',
+      duration: 500,
+      opacity: 1,
+    })
+    .add({
+      targets: '#oval_two',
+      duration: 500,
+      opacity: 0,
+    })
+
+    let blinkingThree = anime.timeline ({
+      targets: '#oval_three',
+      autoplay: true,
+      loop: true,
+      delay: 400,
+      direction: 'alternate'
+    })
+
+    blinkingThree
+      .add({
+        targets: '#oval_three',
+        duration: 500,
+        opacity: 0,
+      })
+      .add({
+        targets: '#oval_three',
+        duration: 500,
+        opacity: 1,
+      })
+      .add({
+        targets: '#oval_three',
+        duration: 500,
+        opacity: 0,
+      })
+      .add({
+        targets: '#oval_three',
+        duration: 500,
+        opacity: 1,
+      })
+      .add({
+        targets: '#oval_three',
+        duration: 500,
+        opacity: 0,
+      })
+
+
+
+
 let greenRectangle = document.querySelector('.rectangle_smile_man')
 greenRectangle.onclick = smileRectangleSmile.play
 
-let changeSmileTriangle = document.querySelector('.smile_green')
-changeSmileTriangle.oneclick = function() {
-  changeSmileTriangle.style.display = 'none'
-  let changeSun = document.querySelector('.sun')
-  changeSun.style.display = 'block'
+
+let changeGreenSmile = document.querySelector('.smile_green')
+changeGreenSmile.onclick = function(j) {
+  changeGreenSmile.style.opacity = 0
+  let sun = document.querySelector('.sun')
+  sun.style.display = 'block'
+}
+
+let changeBear = document.querySelector('.smile_bear')
+changeBear.onclick = function(a) {
+  changeBear.style.opacity = 0
+  let sun = document.querySelector('.demon')
+  sun.style.display = 'block'
 }
 
 let changeBlueTriangle = document.querySelector('.smile_triangle')
 changeBlueTriangle.onclick = function(e) {
- changeBlueTriangle.style.display = 'none'
+ changeBlueTriangle.style.opacity = 0
  let imgSecond = document.querySelector('.angry')
   imgSecond.style.display = 'block'
 }
 
+let wowAnimate = anime.timeline({
+  targets: '.wow',
+  direction: 'alternate',
+  autoplay: true,
+  loop: true
+})
 
-let elem = document.querySelector('#patchik')
-console.log(elem.getBoundingClientRect())
+wowAnimate
+  .add({
+    targets: '.wow',
+    opacity: 0,
+    duration: 200
+  })
+  .add({
+    targets: '.wow',
+    opacity: 1,
+    duration: 200
+  })
+  .add({
+    targets: '.wow',
+    opacity: 0,
+    duration: 200
+  })
+
+  let oopsAnimate = anime.timeline({
+    targets: '.oops',
+    direction: 'alternate',
+    autoplay: true,
+    loop: true
+  })
+
+  oopsAnimate
+    .add({
+      targets: '.oops',
+      opacity: 1,
+      duration: 200
+    })
+    .add({
+      targets: '.oops',
+      opacity: 0,
+      duration: 200
+    })
+    .add({
+      targets: '.oops',
+      opacity: 1,
+      duration: 200
+    })
 
 
+let changingSizeOfEyes = anime.timeline({
+  targets: '.smile_green_eye',
+  autoplay: true,
+  loop: true,
+  direction: 'alternate'
+})
+
+changingSizeOfEyes
+  .add({
+    targets: '.smile_green_eye',
+    backgroundSize: '6vw',
+    duration: 400
+  })
+  .add({
+    targets: '.smile_green_eye',
+    backgroundSize: '8vw',
+    duration: 400
+  })
+  .add({
+    targets: '.smile_green_eye',
+    backgroundSize: '4vw',
+    duration: 400,
+    translateY: '2vw',
+    translateX: '1vw'
+  })
+
+ let changeSizeOfNumber = anime({
+    targets: '#number',
+    fontSize: '70vw',
+    translateX: '-36vw',
+    translateY: '-20vw',
+    direction: 'alternate',
+    duration: 400,
+    autoplay: false
+  })
+
+let number = document.getElementById('numberDiv')
+number.onclick = changeSizeOfNumber.play
+
+
+
+let increaseWidthOfStreet = anime({
+  targets: '#street',
+  width: '60vw',
+  direction: 'alternate',
+  autoplay: false,
+})
+
+let street = document.getElementById('street')
+street.onclick = increaseWidthOfStreet.play
+
+let changeColorOfBody = anime.timeline({
+  targets: 'body',
+  direction: 'alternate',
+  autoplay: false
+})
+
+changeColorOfBody
+  .add({
+    targets: 'body',
+    backgroundColor: '#330033',
+    duration: 500
+  })
+  .add({
+    targets: 'body',
+    backgroundColor: '#6600CC',
+    duration: 500
+  })
+  .add({
+    targets: 'body',
+    backgroundColor: '#9933CC',
+    duration: 500
+  })
+  .add({
+    targets: 'body',
+    backgroundColor: '#CC00FF',
+    duration: 500
+  })
+  .add({
+    targets: 'body',
+    backgroundColor: '#FF66FF',
+    duration: 1000
+  })
+  .add({
+    targets: 'body',
+    backgroundColor: '#FF99FF',
+    duration: 2000
+  })
+
+
+let button = document.querySelector('.button')
+button.onclick = changeColorOfBody.play
+/*let increasingOfHeart = document.querySelector('heart_red')
+increasingOfHeart.onclick = function() {
+  let numberOfHearts = 30
+  for(let i = 0; i < numberOfHearts; i++) {
+    let imgHeart = document.createElement('div')
+    imgHeart.classList.toggle('heart_red_div')
+    imgHeart.style.position = "fixed"
+    imgHeart.style.transform = `translate(${anime.random(0,90)}vw, ${anime.random(0,90)}vh)`
+    document.body.append(imgHeart)
+
+    imgHeart.addEventListener('mouseout', function() {
+      imgHeart.style.display = 'none'
+    })
+  }
+}*/
+
+let increaseWidthCandyWrapper = anime({
+  targets: '#candy',
+  backgroundSize: '100vw',
+  duration: 800,
+  width: '100vw',
+  height: '100vw',
+  translateX: '-40vw',
+  translateY: '-30vw',
+  direction: 'alternate',
+  autoplay: false
+})
+
+let increaseWidth = document.getElementById('candy')
+increaseWidth.onclick = increaseWidthCandyWrapper.play
+
+let moveSmallEye = anime.timeline({
+  targets: '#smallEye',
+  autoplay: true,
+  loop: true,
+  alternete: true
+})
+
+moveSmallEye
+  .add({
+    targets: '#smallEye',
+    translateX: [0,'2vw'],
+    duration: 400,
+  })
+  .add({
+    targets: '#smallEye',
+    translateX: ['2vw', '-1vw'],
+    duration: 400,
+  })
+
+  let bigEye = anime.timeline({
+    targets: '#bigEye',
+    autoplay: true,
+    loop: true,
+    alternete: true
+  })
+
+  bigEye
+    .add({
+      targets: '#bigEye',
+      translateX: [0, '-2vw'],
+      duration: 400,
+    })
+    .add({
+      targets: '#sbigEye',
+      translateX: ['-2vw', '2vw'],
+      duration: 400,
+    })
+
+
+
+let changeImgOfKing = document.querySelector('.smile_king')
+changeImgOfKing.onclick = function() {
+  changeImgOfKing.style.opacity = 0
+  let sad = document.querySelector('.sad')
+  sad.style.display = 'block'
+}
+
+let heart = document.querySelector('.heart_one')
+heart.onclick = function() {
+  let numberOfHearts = 20
+  for(i = 0; i < numberOfHearts; i++) {
+    let heartOne = document.createElement('img')
+    heartOne.classList.toggle('heartTwo')
+    heartOne.style.position = 'fixed'
+    heartOne.style.transform = `translate(${anime.random(0, 90)}vw, ${anime.random(0, 90)}vh, )`
+    document.body.append(heartOne)
+  }
+  heartOne.addEventListener('mouseout', function() {
+    heartOne.style.display = 'none'
+  })
+}
+
+
+/*
 let controller = new ScrollMagic.Controller()
 
  let fixationOfPatch = document.querySelector('#patchik')
@@ -299,10 +638,17 @@ let controller = new ScrollMagic.Controller()
 })
 .addTo(controller)
 .on('enter', () => fixationOfPatch.play())
+*/
 
 
+let controller = new ScrollMagic.Controller()
+new ScrollMagic.Scene({
+  triggerElement: ".cell",
+  triggerHook: 'onLeave',
 
-
+})
+.setClassToggle(".cell", "is-fixed")
+.addTo(controller)
 
 
 function addHeart(amount) {
@@ -315,9 +661,6 @@ function addHeart(amount) {
     count +=1
   }
 }
-
-let heartRed = document.getElementByClassName(".heart_red")
-heartRed .onclick = addHeart.play
 
 /*let fallFraseAboutHappiness = anime({
   targets: '.about_happines_phrase_odd',
