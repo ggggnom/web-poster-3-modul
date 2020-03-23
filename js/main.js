@@ -622,7 +622,7 @@ heart.onclick = function() {
 
 let thorn = document.getElementById('thorn')
 thorn.onclick = function answerMe() {
-  alert('Или мы оторвем лапки...Никто не знает. Ведь кому оторвали, того и нет...')
+  alert('Или оторвем...Никто не знает. Ведь кому оторвали, того и нет...')
 }
 
 
