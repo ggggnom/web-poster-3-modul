@@ -608,6 +608,9 @@ body {
     top: -6vw;
   }
 
+  .yellow_smile {
+    z-index: 4;
+  }
   .yes {
     left: 7vw;
   }
@@ -1293,8 +1296,8 @@ body {
 
   .sad {
     width: 27vw;
-    left: 64vw;
-    top: 24vw;
+    left: 59vw;
+    top: 30vw;
   }
 
   .info {
