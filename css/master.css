@@ -10,8 +10,10 @@ body {
   background-image: url(../img/cell.svg);
   background-size: 100vw;
   transition: background-color 4s ease;
+  cursor: url(../img/cursor.png), auto;
 }
 
+.for_anime {cursor: url("../img/cursor_after.png"), auto;}
 
 .background {
   position: fixed;
@@ -1102,7 +1104,7 @@ body {
   }
 
   .rectangle_smile_smile {
-    top: 28vw;
+    top: 29vw;
   }
 
   .moving_phrase_rectangle {

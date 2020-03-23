@@ -192,31 +192,31 @@ fallAboutHappines
         duration: 3000
       })
 
-    let yellowSmile = document.getElementById("yo")
-    yellowSmile.onclick = changeColorBacground.play
+let yellowSmile = document.getElementById("yo")
+yellowSmile.onclick = changeColorBacground.play
 
 
 
-    let scrollRight = anime({
-      targets: '#moveMe',
-      translateX: ['-60vw', '65vw'],
-      direction: 'alternate',
-      duration: 6000,
-      easing: 'linear',
-      delay: 800,
-      loop: true,
-      autoplay: true
-    })
+let scrollRight = anime({
+  targets: '#moveMe',
+  translateX: ['-60vw', '65vw'],
+  direction: 'alternate',
+  duration: 6000,
+  easing: 'linear',
+  delay: 800,
+  loop: true,
+  autoplay: true
+})
 
-    let runPatch = anime({
-      targets: '.patch',
-      translateX: '60vw',
-      direction: 'alternate',
-      easing: 'steps(5)',
-      autoplay: false
-    })
-    let patch = document.getElementById("patchik")
-    patch.onclick = runPatch.play
+let runPatch = anime({
+  targets: '.patch',
+  translateX: '60vw',
+  direction: 'alternate',
+  easing: 'steps(5)',
+  autoplay: false
+})
+let patch = document.querySelector('.patch')
+patch.onclick = runPatch.play
 
 function fixCells() {
   let cell = document.getElementByClassName('cell')
@@ -605,7 +605,7 @@ changeImgOfKing.onclick = function() {
   sad.style.display = 'block'
 }
 
-let heart = document.querySelector('.heart_one')
+/*let heart = document.querySelector('.heart_one')
 heart.onclick = function() {
   let numberOfHearts = 20
   for(i = 0; i < numberOfHearts; i++) {
@@ -618,7 +618,13 @@ heart.onclick = function() {
   heartOne.addEventListener('mouseout', function() {
     heartOne.style.display = 'none'
   })
+}*/
+
+let thorn = document.getElementById('thorn')
+thorn.onclick = function answerMe() {
+  alert('Или мы оторвем лапки...Никто не знает. Ведь кому оторвали, того и нет...')
 }
+
 
 
 /*
