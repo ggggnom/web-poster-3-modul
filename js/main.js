@@ -1,3 +1,18 @@
+
+
+document.addEventListener("DOMContentLoaded", function(){
+  var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+  console.log(scrollbar);
+  document.querySelector('[href="#openModal"]').addEventListener('click',function(){
+    document.body.style.overflow = 'hidden';
+    document.querySelector('#openModal').style.marginLeft = scrollbar;
+  });
+  document.querySelector('[href="#close"]').addEventListener('click',function(){
+    document.body.style.overflow = 'visible';
+    document.querySelector('#openModal').style.marginLeft = '0px';
+  });
+});
+
 var fallPinKTHread = anime.timeline({
   targets: '.thread_pink',
   duration: 300,
@@ -620,10 +635,7 @@ heart.onclick = function() {
   })
 }*/
 
-let thorn = document.getElementById('thorn')
-thorn.onclick = function answerMe() {
-  alert('Или оторвем...Никто не знает. Ведь кому оторвали, того и нет...')
-}
+
 
 
 
