@@ -5,13 +5,20 @@ document.addEventListener("DOMContentLoaded", function(){
   console.log(scrollbar);
   document.querySelector('[href="#openModal"]').addEventListener('click',function(){
     document.body.style.overflow = 'hidden';
-    document.querySelector('#openModal').style.marginLeft = scrollbar;
+    document.body.style.pointerEvents = 'none'
+    let modal = document.querySelector('.modal')
+    modal.style.opacity = 1
+    modal.style.pointerEvents = 'auto'
   });
   document.querySelector('[href="#close"]').addEventListener('click',function(){
     document.body.style.overflow = 'visible';
-    document.querySelector('#openModal').style.marginLeft = '0px';
+    let modalClose = document.querySelector('.modal')
+    modalClose.style.opacity = 0
+    document.body.style.pointerEvents = 'auto'
   });
 });
+
+
 
 var fallPinKTHread = anime.timeline({
   targets: '.thread_pink',
@@ -542,21 +549,6 @@ changeColorOfBody
 
 let button = document.querySelector('.button')
 button.onclick = changeColorOfBody.play
-/*let increasingOfHeart = document.querySelector('heart_red')
-increasingOfHeart.onclick = function() {
-  let numberOfHearts = 30
-  for(let i = 0; i < numberOfHearts; i++) {
-    let imgHeart = document.createElement('div')
-    imgHeart.classList.toggle('heart_red_div')
-    imgHeart.style.position = "fixed"
-    imgHeart.style.transform = `translate(${anime.random(0,90)}vw, ${anime.random(0,90)}vh)`
-    document.body.append(imgHeart)
-
-    imgHeart.addEventListener('mouseout', function() {
-      imgHeart.style.display = 'none'
-    })
-  }
-}*/
 
 let increaseWidthCandyWrapper = anime({
   targets: '#candy',
@@ -620,55 +612,6 @@ changeImgOfKing.onclick = function() {
   sad.style.display = 'block'
 }
 
-/*let heart = document.querySelector('.heart_one')
-heart.onclick = function() {
-  let numberOfHearts = 20
-  for(i = 0; i < numberOfHearts; i++) {
-    let heartOne = document.createElement('img')
-    heartOne.classList.toggle('heartTwo')
-    heartOne.style.position = 'fixed'
-    heartOne.style.transform = `translate(${anime.random(0, 90)}vw, ${anime.random(0, 90)}vh, )`
-    document.body.append(heartOne)
-  }
-  heartOne.addEventListener('mouseout', function() {
-    heartOne.style.display = 'none'
-  })
-}*/
-
-
-
-
-
-/*
-let controller = new ScrollMagic.Controller()
-
- let fixationOfPatch = document.querySelector('#patchik')
- let patchAnimation = anime({
-   targets: '#patchik',
-   position: 'fixed',
-   loop: true,
-   autoplay: false
- })
- new ScrollMagic.Scene({
-  triggerElement: fixationOfPatch,
-  triggerHook: 0.5,
-  offset: 1500
-})
-.addTo(controller)
-.on('enter', () => fixationOfPatch.play())
-*/
-
-
-let controller = new ScrollMagic.Controller()
-new ScrollMagic.Scene({
-  triggerElement: ".cell",
-  triggerHook: 'onLeave',
-
-})
-.setClassToggle(".cell", "is-fixed")
-.addTo(controller)
-
-
 function addHeart(amount) {
   let count = 25
   while (amount < count) {
@@ -679,26 +622,3 @@ function addHeart(amount) {
     count +=1
   }
 }
-
-/*let fallFraseAboutHappiness = anime({
-  targets: '.about_happines_phrase_odd',
-  rotate: [-15, 45],
-  translateY: [0, '70vh'],
-  direction: 'alternate',
-  duration: 3000,
-  autoplay: false
-})
-
-let blockAboutHappiness = document.querySelector('.about_happines_phrase_odd')
-blockAboutHappiness.oneclick = fallFraseAboutHappiness.play*/
-
-
-/*let stopMovingFrase = anime({
-  targets: '#moveMe',
-  translateX: [0, 0],
-  loop: true,
-  autoplay: false
-})
-
-let blockOfMovingFrase = document.querySelector('.moving_phrase_rectangle')
-blockOfMovingFrase.oneclick = stopMovingFrase.play */

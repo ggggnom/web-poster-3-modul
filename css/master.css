@@ -2,7 +2,6 @@
 @import "font.css";
 
 body {
-  /*background-color: #000;*/
   position: relative;
   font-family: 'Gotham', 'bodoni', sans-serif;
   overflow-x: hidden;
@@ -16,6 +15,7 @@ body {
 .for_anime {cursor: url("../img/cursor_after.png"), auto;}
 
 .modal {
+    background: rgba(0, 0, 0, 0.25);
     position: fixed;
     top: 0;
     right: 0;
@@ -23,8 +23,6 @@ body {
     left: 0;
     z-index: 1050;
     opacity: 0;
-    -webkit-transition: opacity 200ms ease-in;
-    -moz-transition: opacity 200ms ease-in;
     transition: opacity 200ms ease-in;
     pointer-events: none;
     margin: 0;
@@ -49,44 +47,30 @@ body {
   }
 }
 
+@media (min-width: 320px) {
+  .modal_dialog {
+      max-width: 70vw;
+      margin: 5vw auto;
+  }
+}
+
 .modal_content {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
     background-color: #FBCBE1;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 0.5vw solid black;
     border-radius: .3rem;
-    outline: 0;
 }
 
-@media (min-width: 768px) {
-  .modal_content {
-      -webkit-box-shadow: 0 0.5vw 2vw rgba(0, 0, 0, 0.5);
-      box-shadow: 0 0.5vw 90vw rgba(0, 0, 0, 0.5);
-  }
-}
 
 .modal_header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 2vw;
     border-bottom: 0.5 solid black;
@@ -118,12 +102,9 @@ body {
 
 .modal_body {
   position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 2vw;
-    overflow: auto;
+  flex: 1 1 auto;
+  padding: 2vw;
+  overflow: auto;
 }
 
 .modal_body p {
@@ -381,6 +362,7 @@ body {
   background-position: center;
   margin-top: -28vw;
   margin-left: 32vw;
+  z-index: 11;
 }
 
 
@@ -425,6 +407,7 @@ body {
   margin-top: 16vw;
   margin-left: 5vw;
   display: block;
+  z-index: 10;
 }
 
 .smile_green_eye {
@@ -573,6 +556,7 @@ body {
   height: 16vw;
   background-size: 20vw;
   margin-top: 11vw;
+  z-index: 10;
 }
 
 .smile_bear img {
@@ -1411,7 +1395,7 @@ body {
   .sad {
     width: 27vw;
     left: 59vw;
-    top: 30vw;
+    top: 25vw;
   }
 
   .info {
@@ -2144,7 +2128,7 @@ body {
   }
 
   .candy_wrapper p {
-      font-size: 7vh;
+      font-size: 7vw;
   }
 
   /*THIRD SECTION*/
@@ -2157,13 +2141,13 @@ body {
     margin-top: 2vw;
   }
   .number_one {
-    font-size: 17vw;
+    font-size: 21vw;
     -webkit-text-stroke: 0.5vw black;
-    margin-top: -16vw;
+    margin-top: -19vw;
     margin-left: -2vw;
   }
   .number_two {
-    font-size: 17vw;
+    font-size: 21vw;
     -webkit-text-stroke: 0.5vw black;
   }
 
@@ -2398,6 +2382,10 @@ body {
     top: 89vw;
   }
 
+  .sad {
+    margin-top: 40vw;
+  }
+
 }
 
 @media (max-width: 505px) {
@@ -2499,6 +2487,11 @@ body {
 
   .name_of_hospital {
     margin-top: -92vw;
+  }
+  .sad {
+    top: 32vw;
+    width: 38vw;
+    left: 58.5vw;
   }
 
 }
@@ -2617,6 +2610,14 @@ body {
     top: 66vw;
     transform: rotate(0deg);
   }
+  .number_two {
+    font-size: 21vw;
+  }
+
+  .number_one {
+    font-size: 21vw;
+  }
+
 
   .coloring_after {
     left: 26vw;
@@ -2798,7 +2799,7 @@ body {
   }
 
   .street {
-    margin-top: 48vw;
+    margin-top: 32vw;
   }
 
   .oops p:first-child {
@@ -2822,7 +2823,7 @@ body {
  .smile_king {
     margin-left: 51vw;
     margin-top: -60vw;
-    width: 44vw;
+    width: 47vw;
     background-size: 47vw;
     height: 49vw;
  }
@@ -2835,8 +2836,8 @@ body {
 
   .sad {
     width: 47vw;
-    left: 50vw;
-    top: 89vw;
+    left: 51vw;
+    top: 33vw;
     transform: rotate(-28deg);
   }
 
@@ -3012,6 +3013,7 @@ body {
 
   .street{
       margin-left: 44vw;
+      margin-top: 54vw;
   }
 
   .info {
